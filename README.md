@@ -2,7 +2,7 @@
 
 Code and numerical evaluation artifacts for **Budgeted Day-Ahead Reserve Allocation from Conformal Forecasts under Delayed Feedback**, prepared by Ran Wang for submission to *Sustainable Energy, Grids and Networks*. Publication status: prepared for submission; not accepted or published.
 
-Version: `segan-v1.0.0-20261011`. This repository is the current SEGAN reproduction release. The historical package in `historical_release/` keeps its original bytes, anonymous notices, experimental contracts and access records. Its old manuscript claims do not replace the current end-to-end study.
+Version: `segan-v1.0.1-20261011`. This repository is the current SEGAN reproduction release. The historical package in `historical_release/` keeps its original bytes, anonymous notices, experimental contracts and access records. Its old manuscript claims do not replace the current end-to-end study.
 
 ## Reproduce the primary results
 
@@ -39,3 +39,7 @@ Original provider archives, full legacy model weights and training dependencies 
 ## License and citation
 
 New project code is BSD-3-Clause; preserved historical and third-party notices remain in their original locations. Upstream SAOCP is obtained separately at the pinned commit and retains its Apache-2.0 license. Source datasets remain subject to provider terms. Cite this fixed repository version using [CITATION.cff](CITATION.cff).
+
+## Figure 2 layout patch
+
+Version 1.0.1 replaces the end-to-end schematic with a legible layout, longer arrow shafts and action labels entirely outside the boxes. The versioned generator is `study/retarget/review_2026-10-11/r07_figure2_layout.py`; the earlier generator remains historical. Frozen numerical inputs, protocols, results and all result-bearing assets are unchanged.

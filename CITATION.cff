@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Wang
     given-names: Ran
-version: segan-v1.0.0-20261011
+version: segan-v1.0.1-20261011
 date-released: 2026-10-11
 url: "https://github.com/ripeconan/dayahead-reserve-allocation-segan"
 repository-code: "https://github.com/ripeconan/dayahead-reserve-allocation-segan"
