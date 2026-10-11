@@ -1,0 +1,21 @@
+\begin{table}[!tbp]
+\centering
+\caption{Modeled coverage service on the seven exposed NYISO origins (2019--2025) for every declared policy. $W_3$ and $W_7$ are the lowest 3- and 7-day mean service inside one segment; actions and blocked days are annual means; the horizon cap is $B=55$ committed days per origin.}
+\label{tab:r2-service}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrrrrrrr@{}}
+\toprule
+Policy & Mean & $W_3$ & $W_7$ & Actions & Rate (\%) & Blocked & Rescue & $L_1$ \\
+\midrule
+none & 0.9045 & 0.3393 & 0.581633 & 0.00 & 0.00 & 0.00 & -- & 0.0955 \\
+P (production) & 0.9159 & 0.4087 & 0.713435 & 44.29 & 12.16 & 0.86 & 0.4679 & 0.2063 \\
+F1 pace-7 & 0.9195 & 0.4325 & 0.646259 & 51.57 & 14.16 & 0.00 & 0.5766 & 0.2228 \\
+F2 bank-pace & 0.9190 & 0.3948 & 0.641156 & 53.71 & 14.75 & 0.00 & 0.5559 & 0.2292 \\
+F3 two-low & 0.9176 & 0.3393 & 0.581633 & 55.00 & 15.10 & 113.57 & 0.5636 & 0.2342 \\
+F4 persistence & 0.9077 & 0.4048 & 0.653061 & 11.71 & 3.22 & 0.00 & 0.4510 & 0.1246 \\
+F5 declared-end bank & 0.9158 & 0.4087 & 0.708333 & 44.29 & 12.16 & 0.00 & 0.4558 & 0.2064 \\
+\bottomrule
+\end{tabular}
+\par\footnotesize Service is the modeled coverage score of Eq.~\eqref{eq:service}; actions are committed days counted over the declared calendar. ``--'' marks an undefined ratio (the no-commitment policy has no committed day).
+\end{table}

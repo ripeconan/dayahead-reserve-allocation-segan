@@ -1,0 +1,376 @@
+{
+  "all_pass": true,
+  "all_selected_pass": true,
+  "begin_local": "2026-10-11T11:19:06+08:00",
+  "checkout": "/home/icdm/card10_external/online_conformal",
+  "checkout_source": "cli",
+  "complete": true,
+  "finished_local": "2026-10-11T11:22:51+08:00",
+  "full_suite": true,
+  "host": "server501",
+  "interrupted": null,
+  "label": null,
+  "n_tests_defined": 15,
+  "n_tests_selected": 15,
+  "python": "3.10.12",
+  "schema": "card10.segan_r2.guards.v4",
+  "selection": [
+    "P1_pipeline_end_to_end",
+    "P2_utc_local_equivalence",
+    "P3_perturbation_prefixes",
+    "P4_year_seam",
+    "P5_dst_structure",
+    "P6_missing_outcome_retained_costs",
+    "P7_manifest_tamper_and_skip",
+    "P8_support_and_windows",
+    "P9_bridge_arithmetic",
+    "P10_determinism",
+    "P11_theory",
+    "P12_missing_day_forced_action",
+    "P13_f5_tension_independence",
+    "P14_aggregate_admission_and_signs",
+    "P15_bootstrap_draw_equivalence"
+  ],
+  "source_fingerprint": {
+    "r2_allocators.py": "61721f2a2afa9f05dee11f0b5b5c65eb41456195a3c9e2eab380be594399d2a8",
+    "r2_bridge.py": "abdf82141901b8d21338bc1dc801d46f2a26dd1727d2ef3439cd99e316875255",
+    "r2_common.py": "b0c15fbb6c57fe2be083cfe26b62efb46805d9697b82a46288274681f08fba4d",
+    "r2_env.py": "49d4932e61b8ee98a3a503bcb11a6b576a94a882cfd30992f72b9ed280a78310",
+    "r2_guards.py": "23e84943fcdfd48c6332e45ddfb5777a1d283c20eeea79d9a7da7f4007f2405a",
+    "r2_pipeline.py": "9070116fbafd395d3b53e01851d680ebeb0d5c50a45c27726a1cb2fe35d1ff89",
+    "r2_pointcorr.py": "644bd9b0402b329aafbdbc6cf71df0b58975a4e9e697985378ab355db40faa14",
+    "r2_run.py": "b3230e0909005cb0b33e481d7154c68a8f8fd03632b890c6a9d15c4975c75316",
+    "r2_saocp_batch.py": "cd2175db692ae4345f3c58e4e2f0b50e4e381c68f82c0b27af4c63b47f07bfa3",
+    "r2_theory.py": "9f1c633b22d986865c065866e1ddf249663b2df9a8e490cd6aa41193379270a4",
+    "vendor/saocp_ast_kernel.py": "3cede45f95ecad16ff9f77e8c830b5ac1d66fbc0b148bdce77f08d8409e47eef"
+  },
+  "source_fingerprint_after": {
+    "r2_allocators.py": "61721f2a2afa9f05dee11f0b5b5c65eb41456195a3c9e2eab380be594399d2a8",
+    "r2_bridge.py": "abdf82141901b8d21338bc1dc801d46f2a26dd1727d2ef3439cd99e316875255",
+    "r2_common.py": "b0c15fbb6c57fe2be083cfe26b62efb46805d9697b82a46288274681f08fba4d",
+    "r2_env.py": "49d4932e61b8ee98a3a503bcb11a6b576a94a882cfd30992f72b9ed280a78310",
+    "r2_guards.py": "23e84943fcdfd48c6332e45ddfb5777a1d283c20eeea79d9a7da7f4007f2405a",
+    "r2_pipeline.py": "9070116fbafd395d3b53e01851d680ebeb0d5c50a45c27726a1cb2fe35d1ff89",
+    "r2_pointcorr.py": "644bd9b0402b329aafbdbc6cf71df0b58975a4e9e697985378ab355db40faa14",
+    "r2_run.py": "b3230e0909005cb0b33e481d7154c68a8f8fd03632b890c6a9d15c4975c75316",
+    "r2_saocp_batch.py": "cd2175db692ae4345f3c58e4e2f0b50e4e381c68f82c0b27af4c63b47f07bfa3",
+    "r2_theory.py": "9f1c633b22d986865c065866e1ddf249663b2df9a8e490cd6aa41193379270a4",
+    "vendor/saocp_ast_kernel.py": "3cede45f95ecad16ff9f77e8c830b5ac1d66fbc0b148bdce77f08d8409e47eef"
+  },
+  "sources_stable": true,
+  "tests": {
+    "P10_determinism": {
+      "checks": {
+        "frames_deterministic": true,
+        "payload_scientific_equal": true,
+        "walks_deterministic": true
+      },
+      "pass": true,
+      "seconds": 27.07,
+      "status": "PASS"
+    },
+    "P11_theory": {
+      "checks": {
+        "binary_action_degradation": true,
+        "blocked_trigger_bound": true,
+        "support_inclusion": true
+      },
+      "details": {
+        "blocked": {
+          "empty_blocked_set_windows": 2621,
+          "max_head_minus_theta_plus_ell": -1.0,
+          "pass": true,
+          "short_j_windows": 10320,
+          "violations_count": [],
+          "violations_weighted": []
+        },
+        "degradation": {
+          "a0_satisfied": 60,
+          "a0_trials": 60,
+          "a1_satisfied": 60,
+          "a1_trials": 60,
+          "pass": true
+        },
+        "inclusion": {
+          "inside_trials": 60,
+          "max_bound_excess_inside": -0.2553256647199208,
+          "pass": true,
+          "r0_clip_ok": 60,
+          "sharpness_attainments": 660
+        }
+      },
+      "pass": true,
+      "seconds": 0.48,
+      "status": "PASS"
+    },
+    "P12_missing_day_forced_action": {
+      "checks": {
+        "budget_retained": true,
+        "complete_flag_false": true,
+        "day_is_f1_scheduled": true,
+        "eta0.5": true,
+        "eta1.0": true,
+        "eta2.0": true,
+        "never_scored": true,
+        "observed_hours_zero": true
+      },
+      "pass": true,
+      "seconds": 12.17,
+      "status": "PASS"
+    },
+    "P13_f5_tension_independence": {
+      "checks": {
+        "f5_prefix_identical": true,
+        "tension_prefix_identical": true,
+        "tension_prefix_numeric_support": true,
+        "thresholds_through_pivot_identical": true
+      },
+      "details": {
+        "tension": {
+          "left_rows": 165,
+          "n_compared": 165,
+          "n_finite_left": 165,
+          "n_finite_right": 165,
+          "pivot": "2021-06-15",
+          "right_rows": 165,
+          "tension_max": 1.7887843946334285,
+          "tension_min": 0.0
+        },
+        "thresholds": {
+          "left_rows": 3960,
+          "pivot": "2021-06-15",
+          "right_rows": 3960
+        }
+      },
+      "pass": true,
+      "seconds": 27.26,
+      "status": "PASS"
+    },
+    "P14_aggregate_admission_and_signs": {
+      "checks": {
+        "fixture_admitted_complete": true,
+        "fixture_all_units_admitted": true,
+        "fixture_complete_after_restore": true,
+        "fixture_grid_complete": true,
+        "fixture_labels_recorded": true,
+        "malformed_json_recorded_invalid": true,
+        "missing_unit_refuses_full_cohort": true,
+        "modeled_contrast_count": true,
+        "modeled_sign_is_asymmetric": true,
+        "modeled_signs_match_independent_recompute": true,
+        "modeled_values_match_independent_recompute": true,
+        "nonfinite_endpoint_recorded_invalid": true,
+        "physical_contrast_count": true,
+        "physical_p_minus_fi_sign_negative": true,
+        "physical_sign_flips_with_kappa": true,
+        "physical_signs_match_independent_recompute": true,
+        "physical_values_match_independent_recompute": true,
+        "year_mismatch_recorded_invalid": true
+      },
+      "details": {
+        "kappa_flip": {
+          "kappa_0": -10.0,
+          "kappa_0.5": 3590.0
+        }
+      },
+      "pass": true,
+      "seconds": 3.4,
+      "status": "PASS"
+    },
+    "P15_bootstrap_draw_equivalence": {
+      "checks": {
+        "ci_matches_loop": true,
+        "draws_bit_identical": true,
+        "draws_match_reviewer_index_design": true,
+        "effect_exact": true,
+        "nonconstant_fixture": true,
+        "production_constants": true,
+        "share_matches_loop": true
+      },
+      "details": {
+        "ci": [
+          -0.04857142857142858,
+          0.2757142857142857
+        ],
+        "effect": 0.1157142857142857,
+        "implementation": "vectorized_single_choice_matrix_v1"
+      },
+      "pass": true,
+      "seconds": 0.06,
+      "status": "PASS"
+    },
+    "P1_pipeline_end_to_end": {
+      "checks": {
+        "allocator_metrics_present": true,
+        "bridge_grid_complete": true,
+        "expected_hours_match_grid": true,
+        "no_q_on_unobserved": true,
+        "r0_nonnegative": true,
+        "required_columns_present": true,
+        "residual_identity": true
+      },
+      "pass": true,
+      "seconds": 14.37,
+      "status": "PASS"
+    },
+    "P2_utc_local_equivalence": {
+      "checks": {
+        "audit_counts_equal": true,
+        "audit_days_equal": true,
+        "exact_utc_support_equality": true,
+        "issued_point_identical": true
+      },
+      "max_issued_point_diff": 0.0,
+      "n_rows": 8736,
+      "pass": true,
+      "seconds": 27.08,
+      "status": "PASS"
+    },
+    "P3_perturbation_prefixes": {
+      "checks": {
+        "action_prefix_identical_m_F1": true,
+        "action_prefix_identical_m_F2": true,
+        "action_prefix_identical_m_F3": true,
+        "action_prefix_identical_m_F4": true,
+        "action_prefix_identical_m_F5": true,
+        "action_prefix_identical_m_P": true,
+        "action_prefix_identical_m_none": true,
+        "action_prefix_identical_v_F1": true,
+        "action_prefix_identical_v_F2": true,
+        "action_prefix_identical_v_F3": true,
+        "action_prefix_identical_v_F4": true,
+        "action_prefix_identical_v_F5": true,
+        "action_prefix_identical_v_P": true,
+        "action_prefix_identical_v_none": true,
+        "geometry_identical_m": true,
+        "geometry_identical_v": true,
+        "issued_through_pivot_identical_m": true,
+        "issued_through_pivot_identical_v": true,
+        "prefix_helper_empty_prefix_fails": true,
+        "prefix_helper_future_support_differs_ok": true,
+        "prefix_helper_nan_pattern_equal": true,
+        "prefix_helper_nan_pattern_mismatch_detected": true,
+        "prefix_helper_prefix_gap_detected": true,
+        "prefix_helper_value_change_detected": true,
+        "region_thresholds_through_pivot_identical_m": true,
+        "region_thresholds_through_pivot_identical_v": true
+      },
+      "details": {
+        "issued_m": {
+          "future_left_only": 4777,
+          "future_right_only": 24,
+          "left_rows": 3959,
+          "n_both_nan": 0,
+          "n_compared": 3959,
+          "pivot": "2021-06-15",
+          "right_rows": 3959
+        },
+        "issued_v": {
+          "future_left_only": 4777,
+          "future_right_only": 4777,
+          "left_rows": 3959,
+          "n_both_nan": 0,
+          "n_compared": 3959,
+          "pivot": "2021-06-15",
+          "right_rows": 3959
+        },
+        "thresholds_m": {
+          "left_rows": 3960,
+          "pivot": "2021-06-15",
+          "right_rows": 3960
+        },
+        "thresholds_v": {
+          "left_rows": 3960,
+          "pivot": "2021-06-15",
+          "right_rows": 3960
+        }
+      },
+      "pass": true,
+      "seconds": 34.67,
+      "status": "PASS"
+    },
+    "P4_year_seam": {
+      "checks": {
+        "boundary_jan1_midnight": true,
+        "cap_55": true,
+        "first_day_label_is_dec31": true,
+        "jan2_start": true
+      },
+      "pass": true,
+      "seconds": 13.54,
+      "status": "PASS"
+    },
+    "P5_dst_structure": {
+      "checks": {
+        "fall_day_25h": true,
+        "fall_ledger_rows_25": true,
+        "fall_release_chronological": true,
+        "fall_release_two_days_later": true,
+        "fall_reveal_keys_exact": true,
+        "fall_source_keys_exact_25h": true,
+        "fall_two_fold_scores": true,
+        "one_frozen_threshold_per_date_slot": true,
+        "provenance_all_ok": true,
+        "spring_day_23h": true
+      },
+      "fall_ledger_rows": 25,
+      "pass": true,
+      "seconds": 13.9,
+      "status": "PASS"
+    },
+    "P6_missing_outcome_retained_costs": {
+      "checks": {
+        "budget_retained": true,
+        "capacity_still_booked": true,
+        "day_not_observed": true,
+        "day_scorable": true,
+        "deficit_not_scored_for_missing_rows": true,
+        "expected_hours_retained": true,
+        "reset_at_reveal": true
+      },
+      "pass": true,
+      "seconds": 11.56,
+      "status": "PASS"
+    },
+    "P7_manifest_tamper_and_skip": {
+      "checks": {
+        "first_pass": true,
+        "manifest_verifies": true,
+        "second_skip": true,
+        "tamper_detected": true,
+        "tampered_run_not_skipped": true
+      },
+      "pass": true,
+      "seconds": 39.7,
+      "status": "PASS"
+    },
+    "P8_support_and_windows": {
+      "checks": {
+        "consecutive_9_days_exact_windows": true,
+        "duplicates_detected": true,
+        "gapped_8_dates_have_no_7_window": true,
+        "mismatch_detected": true
+      },
+      "pass": true,
+      "seconds": 0.0,
+      "status": "PASS"
+    },
+    "P9_bridge_arithmetic": {
+      "checks": {
+        "full_cost_kappa01_19": true,
+        "segments_required": true,
+        "uncovered_finite_18": true,
+        "worst7_is_max_17": true
+      },
+      "pass": true,
+      "seconds": 0.0,
+      "status": "PASS"
+    }
+  },
+  "thread_env": {
+    "MKL_NUM_THREADS": "2",
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2"
+  },
+  "updated_local": "2026-10-11T11:22:51+08:00"
+}

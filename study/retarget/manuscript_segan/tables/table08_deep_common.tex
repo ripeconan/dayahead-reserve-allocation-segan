@@ -1,0 +1,50 @@
+
+\begin{table}[p]
+\centering
+\caption{Common-OAS region results and modeled production-DRB
+benefits, actions, and loss across forecasting bases.}
+\label{tab:deep-common}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\textit{Panel A: common OAS shell without fallback}\\[2pt]
+\begin{tabular}{llrrrr}
+\toprule
+Evaluation & Base & Joint cov. & Base $W_7$ & Median vol. & P95 vol. \\
+\midrule
+DeepAR study & DeepAR & 0.905 & 0.596 & 2.14 & 1165.7 \\
+Four-model study & N-HiTS & 0.903 & 0.624 & 1.70 & 900.3 \\
+Four-model study & PatchTST & 0.904 & 0.616 & 1.96 & 934.5 \\
+Four-model study & TFT & 0.903 & 0.617 & 2.42 & 1408.9 \\
+Four-model study & ProLoaF & 0.902 & 0.611 & 2.08 & 1095.3 \\
+\bottomrule
+\end{tabular}
+
+\vspace{6pt}
+\textit{Panel B: production DRB service effect}\\[2pt]
+\begin{tabular}{llrrr}
+\toprule
+Evaluation & Base & DRB $W_7$ & Effect & Holm $p$ \\
+\midrule
+DeepAR study & DeepAR & 0.704 & +0.108 & 0.008 \\
+Four-model study & N-HiTS & 0.700 & +0.076 & 0.033 \\
+Four-model study & PatchTST & 0.699 & +0.083 & 0.026 \\
+Four-model study & TFT & 0.697 & +0.080 & 0.059 \\
+Four-model study & ProLoaF & 0.686 & +0.074 & 0.054 \\
+\bottomrule
+\end{tabular}
+
+\vspace{6pt}
+\textit{Panel C: production DRB action and cost}\\[2pt]
+\begin{tabular}{llrrr}
+\toprule
+Evaluation & Base & Action (\%) & Rescue & $L_1$ base$\to$DRB \\
+\midrule
+DeepAR study & DeepAR & 12.5 & 0.437 & 0.095$\to$0.210 \\
+Four-model study & N-HiTS & 12.6 & 0.429 & 0.097$\to$0.213 \\
+Four-model study & PatchTST & 12.4 & 0.423 & 0.096$\to$0.210 \\
+Four-model study & TFT & 12.5 & 0.413 & 0.097$\to$0.212 \\
+Four-model study & ProLoaF & 12.1 & 0.482 & 0.098$\to$0.210 \\
+\bottomrule
+\end{tabular}
+\par\footnotesize DeepAR and the four-model evaluation retain separate supports and frozen Holm families. Panel B compares production DRB with each base without fallback; it is not a deep-base-versus-P7 comparison. Service and $L_1$ use the modeled fallback and abstract action penalty. The final four-model common partition ran on Windows Python~3.11 after 30 server-native failures, with identical inputs, code, and SAOCP pin.
+\end{table}

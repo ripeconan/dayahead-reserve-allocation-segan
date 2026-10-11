@@ -1,0 +1,69 @@
+{
+  "all_pass": true,
+  "copied_bound_files": 156,
+  "checks": [
+    {
+      "args": [
+        "scripts/build_release_manifest.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "historical_portability_1.log",
+      "last_output": "verified 156 release files\n"
+    },
+    {
+      "args": [
+        "scripts/build_manifest.py",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "log": "historical_portability_2.log",
+      "last_output": "verified 65 frozen artifacts\n"
+    },
+    {
+      "args": [
+        "scripts/reproduce_artifacts.py"
+      ],
+      "exit_code": 0,
+      "log": "historical_portability_3.log",
+      "last_output": "aw.csv.gz\": 32,\n    \"baseline_matrix/coverage_matched.csv.gz\": 32,\n    \"baseline_matrix/static_volume_matched.csv.gz\": 32,\n    \"causal_comparator/nyiso_strong_comparator.csv.gz\": 4,\n    \"fair_deep/deepar/policy_metrics_per_origin.csv\": 18,\n    \"fair_deep/multimodel/policy_metrics_per_origin.csv\": 54,\n    \"verified_saocp/selected_per_origin_results.csv\": 14\n  },\n  \"controller_trace\": {\n    \"actions\": 280,\n    \"days\": 2543,\n    \"origins\": 7\n  },\n  \"headline_result_count\": 10,\n  \"status\": \"PASS\"\n}\n"
+    },
+    {
+      "args": [
+        "scripts/reproduce_confirmatory.py"
+      ],
+      "exit_code": 0,
+      "log": "historical_portability_4.log",
+      "last_output": "effect\": 0.00099206349206347,\n      \"primary_block2_ci\": [\n        0.0,\n        0.00198412698412694\n      ],\n      \"sensitivity_block3_ci\": [\n        0.0,\n        0.002480158730158675\n      ],\n      \"iid_descriptive_ci\": [\n        0.0,\n        0.002480158730158675\n      ],\n      \"p_for_holm\": 0.03434828258587071,\n      \"holm_adjusted_pvalue\": 0.06869656517174141\n    },\n    {\n      \"contrast_id\": \"C3_D1_minus_C_STAR\",\n      \"status\": \"NOT_EVALUABLE\",\n      \"holm_adjusted_pvalue\": 1.0\n    }\n  ]\n}\n"
+    },
+    {
+      "args": [
+        "scripts/reproduce_robustness.py"
+      ],
+      "exit_code": 0,
+      "log": "historical_portability_5.log",
+      "last_output": ".csv.gz\": 444,\n    \"production_transfer/aggregate_results.csv.gz\": 12,\n    \"production_transfer/daily_trace.csv.gz\": 8376,\n    \"production_transfer/paired_differences.csv.gz\": 299,\n    \"production_transfer/paired_inference.csv.gz\": 39,\n    \"production_transfer/per_origin_results.csv.gz\": 92\n  },\n  \"hyperparameter_reference\": {\n    \"actions\": 280,\n    \"configurations\": 7,\n    \"origins\": 7\n  },\n  \"status\": \"PASS\",\n  \"transfer_trace\": {\n    \"actions\": 318,\n    \"days\": 2094,\n    \"origins\": 23\n  }\n}\n"
+    },
+    {
+      "args": [
+        "scripts/check_internal_imports.py"
+      ],
+      "exit_code": 0,
+      "log": "historical_portability_6.log",
+      "last_output": "internal import check passed for 43 Python files\n"
+    },
+    {
+      "args": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "historical_portability_7.log",
+      "last_output": "ct_lag_two (test_reliability_shield.ReliabilityShieldTests.test_strict_lag_two) ... ok\ntest_frozen_objects (test_robustness_replay.RobustnessReplayTests.test_frozen_objects) ... ok\ntest_hyperparameter_reference (test_robustness_replay.RobustnessReplayTests.test_hyperparameter_reference) ... ok\ntest_transfer_trace (test_robustness_replay.RobustnessReplayTests.test_transfer_trace) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 1.405s\n\nOK (skipped=1)\n"
+    }
+  ]
+}

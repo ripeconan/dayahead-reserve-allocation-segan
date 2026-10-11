@@ -1,0 +1,26 @@
+
+\begin{table}[!tbp]
+\centering
+\caption{Modeled NYISO service, action use, and loss for exposed
+allocation diagnostics.}
+\label{tab:nyiso-policies}
+\scriptsize
+\setlength{\tabcolsep}{2.7pt}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Policy & Mean & $W_3$ & $W_7$ & $W_{14}$ & Actions & Rate (\%) & Rescue & $L_1$ \\
+\midrule
+No fallback & 0.909 & 0.383 & 0.636 & 0.769 & 0 & 0.0 & -- & 0.091 \\
+DRB & 0.918 & 0.462 & 0.730 & 0.809 & 280 & 11.0 & 0.494 & 0.192 \\
+COCD & 0.917 & 0.435 & 0.702 & 0.803 & 280 & 11.0 & 0.462 & 0.193 \\
+Random matched & 0.919 & 0.417 & 0.662 & 0.786 & 280/draw & 11.0 & 0.549 & 0.191 \\
+Exact offline oracle & 0.952 & 0.825 & 0.912 & 0.918 & 280 & 11.0 & 1.000 & 0.158 \\
+\bottomrule
+\end{tabular}
+\par\footnotesize Modeled service and the abstract action loss $L_1$; all rows
+share the DRB base and horizon cap. COCD is budget/end-conditioned and the
+exact oracle uses the full outcome path: neither is a deployable comparator.
+Random matched averages outcome-independent positions at the realized count;
+DRB and COCD use exactly 280 actions with per-origin, per-segment count
+matching.
+\end{table}

@@ -1,0 +1,81 @@
+{
+  "access_flags": {
+    "admitted_compact_objects_accessed": true,
+    "network_used": false,
+    "new_confirmatory_family_created": false,
+    "quarantined_object_accessed": false,
+    "raw_outcome_accessed": false,
+    "released_r67_outcome_object_accessed": true,
+    "reserved_forecast_accessed": false,
+    "reserved_outcome_accessed": false,
+    "ssh_used": false
+  },
+  "counts": {
+    "bootstrap_draws_per_method": 10000,
+    "descriptive_uncertainty_rows": 10,
+    "partial_response_rows": 36,
+    "primary_strata": 10,
+    "primary_units": 72
+  },
+  "identity": {
+    "mrp02_manifest": {
+      "bytes": 2992,
+      "path": "reports/experiment_outputs/card10_mr_p0_2_production_transfer_2026-07-22/manifest.json",
+      "sha256": "257552aa2d690860fb9dcd06e1989038d9f88269ef93e7d75888805ccfd4578b"
+    },
+    "mrp02_per_origin": {
+      "bytes": 4481,
+      "path": "reports/experiment_outputs/card10_mr_p0_2_production_transfer_2026-07-22/per_origin_results.csv.gz",
+      "sha256": "cce0fcfc633fe26b0436bb6876250ea71b8b6bd9a08e5748fefa6b24507da8c1"
+    },
+    "mrp03_manifest": {
+      "bytes": 3188,
+      "path": "reports/experiment_outputs/card10_mr_p0_3_partial_effectiveness_2026-07-22/manifest.json",
+      "sha256": "298c2354ce51c99b763f22288a7c6457bb8f2763ccf86dbc2301cc194cf0fced"
+    },
+    "mrp03_per_cell": {
+      "bytes": 75586,
+      "path": "reports/experiment_outputs/card10_mr_p0_3_partial_effectiveness_2026-07-22/per_cell_results.csv.gz",
+      "sha256": "1cb12b70e49dd7fcd0751d21d2f19b3a46c0c03dc077f80ddfd8485abc395acb"
+    },
+    "mrp04_runner": {
+      "bytes": 22805,
+      "path": "scripts/card10_method/run_action_cost_break_even_mrp04.py",
+      "sha256": "3eddb261376593585c7d5a7858cd88699d3d3cb3e5dbbec98618cd842f9edc68"
+    },
+    "protocol": {
+      "bytes": 5648,
+      "path": "reports/card10_MR-P0-4_action-cost-break-even协议_FROZEN_2026-07-22.md",
+      "sha256": "b86630ae043913e214353c328f26445acd9e8333151b652dd08f6a97331c3ceb"
+    },
+    "r67_block_metrics": {
+      "bytes": 3054,
+      "path": "reports/experiment_outputs/card10_confirmatory_phase2_recovery2_outcome_r67_2026-07-17/formal_run/block_metrics.csv.gz",
+      "sha256": "ac8a25e2b99eb0d4cc23ac87d302069efe476f08bcf2d31f75ed274a85e4ea21"
+    },
+    "r67_daily_trace": {
+      "bytes": 3051,
+      "path": "reports/experiment_outputs/card10_confirmatory_phase2_recovery2_outcome_r67_2026-07-17/formal_run/daily_trace.csv.gz",
+      "sha256": "97258791eaba7bcb7513d369c1abd5b7ac1ed0624d8d7da4269b44494ca9bb0f"
+    },
+    "r67_full_period_metrics": {
+      "bytes": 5327,
+      "path": "reports/experiment_outputs/card10_confirmatory_phase2_recovery2_outcome_r67_2026-07-17/formal_run/full_period_metrics.json",
+      "sha256": "29233597911f5c28908beeace7ce65ba320787464912780307ec0f595e78c552"
+    },
+    "r67_manifest": {
+      "bytes": 15757,
+      "path": "reports/experiment_outputs/card10_confirmatory_phase2_recovery2_outcome_r67_2026-07-17/formal_run/MANIFEST.json",
+      "sha256": "af67c9cd1972c52d2dd5b30e19813ef6276c299b1cef3ac8c494e228df0dccf1"
+    }
+  },
+  "lambda_definition": "mean_service_gain / action_rate",
+  "r67_full_period_identity": {
+    "day_weighted_action_rate": 0.14917127071823205,
+    "day_weighted_mean_service_gain": 0.009898710865561686,
+    "full_period_action_rate": 0.14917127071823205,
+    "full_period_mean_service_gain": 0.00989871086556171
+  },
+  "schema": "card10.mr_p0_4_action_cost_break_even_verification.v1",
+  "status": "PASS"
+}

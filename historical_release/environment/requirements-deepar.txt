@@ -1,0 +1,4 @@
+numpy
+pandas
+torch==2.5.1
+gluonts[torch]==0.16.3

@@ -1,0 +1,7 @@
+{
+  "synthetic_only": true,
+  "windows_checked": 132480,
+  "violations": [],
+  "pass": true,
+  "reviewer_proof": "The last positive-deficit nontrigger has an eligible prefix sum <theta and at most lag remaining head terms. Later positive deficits are blocked; support inclusion transfers the bound with action-day physical deficit added. This numerical check supplements that proof."
+}

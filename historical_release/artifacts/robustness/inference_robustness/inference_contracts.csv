@@ -1,0 +1,8 @@
+source,cohort_family,paired_unit,n_clusters,block_contract,n_draws,admission,multiplicity
+R39,NYISO exposed base--DRB,origin endpoint,7,IID/2/3 origins,10000,descriptive,none
+R57,NYISO exposed COCD--DRB,origin endpoint,7,IID/2/3 origins,10000,descriptive,none
+R67,recovery registered family,12 chronological block endpoints,12,circular 2 primary; 3 sensitivity,20000,recovery-confirmatory,Holm m=3
+R85-point,DeepAR point MAE,paired delivery day within origin/segment,7,circular day 7 primary; 14 sensitivity,10000,exposed evaluation,Holm m=4
+R85-common,DeepAR common OAS,paired delivery day within origin/segment,6,circular day 7 primary; 14 sensitivity,10000,exposed evaluation,Holm m=4
+R86-point,four-model point MAE,paired delivery day within origin/segment,7,circular day 7 primary; 14 sensitivity,10000,exposed evaluation,Holm m=8
+R86-common,four-model common OAS,paired delivery day within origin/segment,6,circular day 7 primary; 14 sensitivity,10000,exposed evaluation,Holm m=16

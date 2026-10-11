@@ -1,0 +1,14 @@
+[
+  {
+    "attempt": "20261011T094518.a60797e8",
+    "canonical_payload_sha256": "f26d170bf84c0534104b37c8b4e544a76a80e96588416850dfbe52baad0bd598",
+    "event": "computed",
+    "status": "PASS",
+    "ts": "2026-10-11T09:45:22"
+  },
+  {
+    "canonical_payload_sha256": "f26d170bf84c0534104b37c8b4e544a76a80e96588416850dfbe52baad0bd598",
+    "event": "resume_skip_verified",
+    "ts": "2026-10-11T09:45:36"
+  }
+]

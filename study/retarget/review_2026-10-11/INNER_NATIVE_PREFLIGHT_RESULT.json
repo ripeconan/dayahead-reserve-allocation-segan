@@ -1,0 +1,27 @@
+{
+  "raw_sha256": "d9e492532e22bc3f41c6967acf99cc5b49a49ae2e5ba3ae3b7dbc8092d9e5d0d",
+  "raw_bytes": 7093132,
+  "raw_header": "timestamp_utc,delivery_date,delivery_hour,CAPITL_forecast,CENTRL_forecast,DUNWOD_forecast,GENESE_forecast,HUD VL_forecast,LONGIL_forecast,MHK VL_forecast,MILLWD_forecast,N.Y.C._forecast,NORTH_forecast,WEST_forecast,CAPITL_actual,CENTRL_actual,DUNWOD_actual,GENESE_actual,HUD VL_actual,LONGIL_actual,MHK VL_actual,MILLWD_actual,N.Y.C._actual,NORTH_actual,WEST_actual",
+  "git": {
+    "head": {
+      "exit_code": 0,
+      "stdout": "95790a9b9e4061166e6d7a8a13282e019b1a8663",
+      "stderr": ""
+    },
+    "tree": {
+      "exit_code": 0,
+      "stdout": "77348e5fe7f2bb3ed5a031aaad9874b6a5ab2d7b",
+      "stderr": ""
+    },
+    "status": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "native_smoke": {
+    "exit_code": 1,
+    "stdout": "{\"stack\": {\"numpy\": \"2.2.6\", \"pandas\": \"2.2.3\", \"scipy\": \"1.15.3\", \"sklearn\": \"1.7.2\"}}\n",
+    "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/home/icdm/card10_external/online_conformal/online_conformal/saocp.py\", line 12, in <module>\n    from online_conformal.base import BasePredictor\n  File \"/home/icdm/card10_external/online_conformal/online_conformal/base.py\", line 12, in <module>\n    from merlion.models.forecast.base import ForecasterBase\nModuleNotFoundError: No module named 'merlion'\n"
+  }
+}

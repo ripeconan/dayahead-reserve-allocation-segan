@@ -1,0 +1,33 @@
+{
+  "access_flags": {
+    "existing_admitted_traces_accessed": true,
+    "network_used": false,
+    "new_outcome_accessed": false,
+    "reserved_outcome_accessed": false,
+    "ssh_used": false
+  },
+  "block_length": {
+    "all_32_relation_stable": true,
+    "deep_drb_mean_b7_b14_positive": 5,
+    "deep_drb_w7_b7_b14_positive": 5,
+    "holm_rejections_block7": 17
+  },
+  "recovery": {
+    "c1_block2_holm_p": 0.00704964751762412,
+    "c1_block3_holm_p": 0.0010499475026248687,
+    "c1_signflip_holm_p": 0.09375,
+    "registered_decision_replaced": false
+  },
+  "row_counts": {
+    "block_length": 32,
+    "contracts": 7,
+    "leave_one_origin_out": 40,
+    "recovery": 3
+  },
+  "schema": "card10.mr_p1_3_inference_robustness_summary.v1",
+  "small_cluster": {
+    "loo_rows": 40,
+    "loo_sign_stable_rows": 34
+  },
+  "status": "PASS"
+}

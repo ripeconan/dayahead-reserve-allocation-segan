@@ -1,0 +1,1143 @@
+{
+  "access_flags": {
+    "experiment_outcome_access": false,
+    "network_access": false,
+    "reserved_forecast_access": false,
+    "reserved_outcome_access": false,
+    "ssh_access": false
+  },
+  "analytic_claim": {
+    "premise": "W > ell and memory >= W - ell",
+    "service_infimum": "max(0, 1 - (theta + ell)/W)",
+    "shortfall_supremum": "min(W, theta + ell)"
+  },
+  "counterexamples": {
+    "blocked_trigger_cap_zero": {
+      "actions": 0,
+      "pass": true,
+      "shortfall": 7.0
+    },
+    "cross_segment_reset": {
+      "actions": 3,
+      "pass": true,
+      "shortfall": 4.0
+    },
+    "imperfect_fallback_eta_075": {
+      "actions": 5,
+      "pass": true,
+      "shortfall": 3.25
+    },
+    "memory_condition_removed": {
+      "argmax_shortfall": [
+        1.0,
+        -0.0,
+        1.0,
+        -0.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "false_formula_value": 3.0,
+      "lp_closure_supremum": 5.0,
+      "parameters": {
+        "case_id": "counterexample_memory_L2_M3_W8_theta1",
+        "ell": 2,
+        "memory": 3,
+        "stratum": "memory_condition_removed",
+        "theta": 1.0,
+        "window_length": 8,
+        "window_start": 0
+      },
+      "pass": true
+    }
+  },
+  "environment": {
+    "absolute_tolerance": 1e-08,
+    "linprog_method": "highs",
+    "numpy": "2.4.6",
+    "python": "3.11.15",
+    "scipy": "1.17.1"
+  },
+  "grid": {
+    "all_pass": true,
+    "case_count": 33,
+    "cases": [
+      {
+        "analytic_supremum": 1.5,
+        "argmax_shortfall": [
+          0.5,
+          1.0
+        ],
+        "case_id": "start_L1_M1_W2_positive_floor",
+        "ell": 1,
+        "lp_closure_supremum": 1.5,
+        "mask_count": 4,
+        "memory": 1,
+        "pass": true,
+        "service_infimum": 0.25,
+        "stratum": "positive_floor",
+        "theta": 0.5,
+        "window_length": 2,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 1.5,
+          "max_state": 0.4999990000000001,
+          "realized_shortfall": 1.499999
+        }
+      },
+      {
+        "analytic_supremum": 2.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L1_M1_W2_zero_boundary",
+        "ell": 1,
+        "lp_closure_supremum": 2.0,
+        "mask_count": 4,
+        "memory": 1,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_boundary",
+        "theta": 1.0,
+        "window_length": 2,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 2.0,
+          "max_state": 0.999999,
+          "realized_shortfall": 1.9999989999999999
+        }
+      },
+      {
+        "analytic_supremum": 2.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L1_M1_W2_zero_attained",
+        "ell": 1,
+        "lp_closure_supremum": 2.0,
+        "mask_count": 4,
+        "memory": 1,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_attained",
+        "theta": 1.5,
+        "window_length": 2,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "attained",
+          "delta": 0.0,
+          "expected_supremum": 2.0,
+          "max_state": 1.0,
+          "realized_shortfall": 2.0
+        }
+      },
+      {
+        "analytic_supremum": 2.5,
+        "argmax_shortfall": [
+          0.0,
+          0.5,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L1_M3_W4_positive_floor",
+        "ell": 1,
+        "lp_closure_supremum": 2.5,
+        "mask_count": 16,
+        "memory": 3,
+        "pass": true,
+        "service_infimum": 0.375,
+        "stratum": "positive_floor",
+        "theta": 1.5,
+        "window_length": 4,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 2.5,
+          "max_state": 1.4999989999999999,
+          "realized_shortfall": 2.499999
+        }
+      },
+      {
+        "analytic_supremum": 4.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L1_M3_W4_zero_boundary",
+        "ell": 1,
+        "lp_closure_supremum": 4.0,
+        "mask_count": 16,
+        "memory": 3,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_boundary",
+        "theta": 3.0,
+        "window_length": 4,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 4.0,
+          "max_state": 2.999999,
+          "realized_shortfall": 3.999999
+        }
+      },
+      {
+        "analytic_supremum": 4.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L1_M3_W4_zero_attained",
+        "ell": 1,
+        "lp_closure_supremum": 4.0,
+        "mask_count": 16,
+        "memory": 3,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_attained",
+        "theta": 3.5,
+        "window_length": 4,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "attained",
+          "delta": 0.0,
+          "expected_supremum": 4.0,
+          "max_state": 3.0,
+          "realized_shortfall": 4.0
+        }
+      },
+      {
+        "analytic_supremum": 3.5,
+        "argmax_shortfall": [
+          0.0,
+          0.0,
+          0.5,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L1_M5_W6_positive_floor",
+        "ell": 1,
+        "lp_closure_supremum": 3.5,
+        "mask_count": 64,
+        "memory": 5,
+        "pass": true,
+        "service_infimum": 0.41666666666666663,
+        "stratum": "positive_floor",
+        "theta": 2.5,
+        "window_length": 6,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 3.5,
+          "max_state": 2.499999,
+          "realized_shortfall": 3.499999
+        }
+      },
+      {
+        "analytic_supremum": 6.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L1_M5_W6_zero_boundary",
+        "ell": 1,
+        "lp_closure_supremum": 6.0,
+        "mask_count": 64,
+        "memory": 5,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_boundary",
+        "theta": 5.0,
+        "window_length": 6,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 6.0,
+          "max_state": 4.999999,
+          "realized_shortfall": 5.999999
+        }
+      },
+      {
+        "analytic_supremum": 6.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L1_M5_W6_zero_attained",
+        "ell": 1,
+        "lp_closure_supremum": 6.0,
+        "mask_count": 64,
+        "memory": 5,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_attained",
+        "theta": 5.5,
+        "window_length": 6,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "attained",
+          "delta": 0.0,
+          "expected_supremum": 6.0,
+          "max_state": 5.0,
+          "realized_shortfall": 6.0
+        }
+      },
+      {
+        "analytic_supremum": 2.5,
+        "argmax_shortfall": [
+          0.5,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L2_M1_W3_positive_floor",
+        "ell": 2,
+        "lp_closure_supremum": 2.5,
+        "mask_count": 8,
+        "memory": 1,
+        "pass": true,
+        "service_infimum": 0.16666666666666663,
+        "stratum": "positive_floor",
+        "theta": 0.5,
+        "window_length": 3,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 2.5,
+          "max_state": 0.4999990000000001,
+          "realized_shortfall": 2.499999
+        }
+      },
+      {
+        "analytic_supremum": 3.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L2_M1_W3_zero_boundary",
+        "ell": 2,
+        "lp_closure_supremum": 3.0,
+        "mask_count": 8,
+        "memory": 1,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_boundary",
+        "theta": 1.0,
+        "window_length": 3,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 3.0,
+          "max_state": 0.999999,
+          "realized_shortfall": 2.999999
+        }
+      },
+      {
+        "analytic_supremum": 3.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L2_M1_W3_zero_attained",
+        "ell": 2,
+        "lp_closure_supremum": 3.0,
+        "mask_count": 8,
+        "memory": 1,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_attained",
+        "theta": 1.5,
+        "window_length": 3,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "attained",
+          "delta": 0.0,
+          "expected_supremum": 3.0,
+          "max_state": 1.0,
+          "realized_shortfall": 3.0
+        }
+      },
+      {
+        "analytic_supremum": 3.5,
+        "argmax_shortfall": [
+          0.0,
+          0.5,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L2_M3_W5_positive_floor",
+        "ell": 2,
+        "lp_closure_supremum": 3.5,
+        "mask_count": 32,
+        "memory": 3,
+        "pass": true,
+        "service_infimum": 0.30000000000000004,
+        "stratum": "positive_floor",
+        "theta": 1.5,
+        "window_length": 5,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 3.5,
+          "max_state": 1.4999989999999999,
+          "realized_shortfall": 3.499999
+        }
+      },
+      {
+        "analytic_supremum": 5.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L2_M3_W5_zero_boundary",
+        "ell": 2,
+        "lp_closure_supremum": 5.0,
+        "mask_count": 32,
+        "memory": 3,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_boundary",
+        "theta": 3.0,
+        "window_length": 5,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 5.0,
+          "max_state": 2.999999,
+          "realized_shortfall": 4.999999
+        }
+      },
+      {
+        "analytic_supremum": 5.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L2_M3_W5_zero_attained",
+        "ell": 2,
+        "lp_closure_supremum": 5.0,
+        "mask_count": 32,
+        "memory": 3,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_attained",
+        "theta": 3.5,
+        "window_length": 5,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "attained",
+          "delta": 0.0,
+          "expected_supremum": 5.0,
+          "max_state": 3.0,
+          "realized_shortfall": 5.0
+        }
+      },
+      {
+        "analytic_supremum": 4.5,
+        "argmax_shortfall": [
+          0.0,
+          0.0,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L2_M5_W7_positive_floor",
+        "ell": 2,
+        "lp_closure_supremum": 4.5,
+        "mask_count": 128,
+        "memory": 5,
+        "pass": true,
+        "service_infimum": 0.3571428571428571,
+        "stratum": "positive_floor",
+        "theta": 2.5,
+        "window_length": 7,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 4.5,
+          "max_state": 2.499999,
+          "realized_shortfall": 4.499999
+        }
+      },
+      {
+        "analytic_supremum": 7.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L2_M5_W7_zero_boundary",
+        "ell": 2,
+        "lp_closure_supremum": 7.0,
+        "mask_count": 128,
+        "memory": 5,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_boundary",
+        "theta": 5.0,
+        "window_length": 7,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 7.0,
+          "max_state": 4.999999,
+          "realized_shortfall": 6.999999
+        }
+      },
+      {
+        "analytic_supremum": 7.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L2_M5_W7_zero_attained",
+        "ell": 2,
+        "lp_closure_supremum": 7.0,
+        "mask_count": 128,
+        "memory": 5,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_attained",
+        "theta": 5.5,
+        "window_length": 7,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "attained",
+          "delta": 0.0,
+          "expected_supremum": 7.0,
+          "max_state": 5.0,
+          "realized_shortfall": 7.0
+        }
+      },
+      {
+        "analytic_supremum": 3.5,
+        "argmax_shortfall": [
+          0.5,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L3_M1_W4_positive_floor",
+        "ell": 3,
+        "lp_closure_supremum": 3.5,
+        "mask_count": 16,
+        "memory": 1,
+        "pass": true,
+        "service_infimum": 0.125,
+        "stratum": "positive_floor",
+        "theta": 0.5,
+        "window_length": 4,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 3.5,
+          "max_state": 0.4999990000000001,
+          "realized_shortfall": 3.499999
+        }
+      },
+      {
+        "analytic_supremum": 4.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L3_M1_W4_zero_boundary",
+        "ell": 3,
+        "lp_closure_supremum": 4.0,
+        "mask_count": 16,
+        "memory": 1,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_boundary",
+        "theta": 1.0,
+        "window_length": 4,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 4.0,
+          "max_state": 0.999999,
+          "realized_shortfall": 3.999999
+        }
+      },
+      {
+        "analytic_supremum": 4.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L3_M1_W4_zero_attained",
+        "ell": 3,
+        "lp_closure_supremum": 4.0,
+        "mask_count": 16,
+        "memory": 1,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_attained",
+        "theta": 1.5,
+        "window_length": 4,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "attained",
+          "delta": 0.0,
+          "expected_supremum": 4.0,
+          "max_state": 1.0,
+          "realized_shortfall": 4.0
+        }
+      },
+      {
+        "analytic_supremum": 4.5,
+        "argmax_shortfall": [
+          0.0,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L3_M3_W6_positive_floor",
+        "ell": 3,
+        "lp_closure_supremum": 4.5,
+        "mask_count": 64,
+        "memory": 3,
+        "pass": true,
+        "service_infimum": 0.25,
+        "stratum": "positive_floor",
+        "theta": 1.5,
+        "window_length": 6,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 4.5,
+          "max_state": 1.4999989999999999,
+          "realized_shortfall": 4.499999
+        }
+      },
+      {
+        "analytic_supremum": 6.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L3_M3_W6_zero_boundary",
+        "ell": 3,
+        "lp_closure_supremum": 6.0,
+        "mask_count": 64,
+        "memory": 3,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_boundary",
+        "theta": 3.0,
+        "window_length": 6,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 6.0,
+          "max_state": 2.999999,
+          "realized_shortfall": 5.999999
+        }
+      },
+      {
+        "analytic_supremum": 6.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L3_M3_W6_zero_attained",
+        "ell": 3,
+        "lp_closure_supremum": 6.0,
+        "mask_count": 64,
+        "memory": 3,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_attained",
+        "theta": 3.5,
+        "window_length": 6,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "attained",
+          "delta": 0.0,
+          "expected_supremum": 6.0,
+          "max_state": 3.0,
+          "realized_shortfall": 6.0
+        }
+      },
+      {
+        "analytic_supremum": 5.5,
+        "argmax_shortfall": [
+          0.0,
+          0.0,
+          0.5,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L3_M5_W8_positive_floor",
+        "ell": 3,
+        "lp_closure_supremum": 5.5,
+        "mask_count": 256,
+        "memory": 5,
+        "pass": true,
+        "service_infimum": 0.3125,
+        "stratum": "positive_floor",
+        "theta": 2.5,
+        "window_length": 8,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 5.5,
+          "max_state": 2.499999,
+          "realized_shortfall": 5.499999
+        }
+      },
+      {
+        "analytic_supremum": 8.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L3_M5_W8_zero_boundary",
+        "ell": 3,
+        "lp_closure_supremum": 8.0,
+        "mask_count": 256,
+        "memory": 5,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_boundary",
+        "theta": 5.0,
+        "window_length": 8,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 8.0,
+          "max_state": 4.999999,
+          "realized_shortfall": 7.999999
+        }
+      },
+      {
+        "analytic_supremum": 8.0,
+        "argmax_shortfall": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "start_L3_M5_W8_zero_attained",
+        "ell": 3,
+        "lp_closure_supremum": 8.0,
+        "mask_count": 256,
+        "memory": 5,
+        "pass": true,
+        "service_infimum": 0.0,
+        "stratum": "zero_attained",
+        "theta": 5.5,
+        "window_length": 8,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "attained",
+          "delta": 0.0,
+          "expected_supremum": 8.0,
+          "max_state": 5.0,
+          "realized_shortfall": 8.0
+        }
+      },
+      {
+        "analytic_supremum": 3.0,
+        "argmax_shortfall": [
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "production_L2_M6_W7_theta1",
+        "ell": 2,
+        "lp_closure_supremum": 3.0,
+        "mask_count": 128,
+        "memory": 6,
+        "pass": true,
+        "service_infimum": 0.5714285714285714,
+        "stratum": "production",
+        "theta": 1.0,
+        "window_length": 7,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 3.0,
+          "max_state": 0.9999990000000003,
+          "realized_shortfall": 2.9999990000000003
+        }
+      },
+      {
+        "analytic_supremum": 2.0,
+        "argmax_shortfall": [
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "lag1_L1_M6_W7_theta1",
+        "ell": 1,
+        "lp_closure_supremum": 2.0,
+        "mask_count": 128,
+        "memory": 6,
+        "pass": true,
+        "service_infimum": 0.7142857142857143,
+        "stratum": "lag1",
+        "theta": 1.0,
+        "window_length": 7,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 2.0,
+          "max_state": 0.9999990000000003,
+          "realized_shortfall": 1.9999990000000003
+        }
+      },
+      {
+        "analytic_supremum": 3.75,
+        "argmax_shortfall": [
+          0.0,
+          0.0,
+          0.75,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "memory_slack_L3_M5_W6_theta075",
+        "ell": 3,
+        "lp_closure_supremum": 3.75,
+        "mask_count": 64,
+        "memory": 5,
+        "pass": true,
+        "service_infimum": 0.375,
+        "stratum": "memory_slack",
+        "theta": 0.75,
+        "window_length": 6,
+        "window_start": 0,
+        "witness": {
+          "actions": 0,
+          "applicable": true,
+          "attainment": "approach",
+          "delta": 1e-06,
+          "expected_supremum": 3.75,
+          "max_state": 0.7499989999999999,
+          "realized_shortfall": 3.749999
+        }
+      },
+      {
+        "analytic_supremum": 2.0,
+        "argmax_shortfall": [
+          0.0,
+          0.0,
+          -0.0,
+          -0.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "mid_L1_M3_W4_theta1",
+        "ell": 1,
+        "lp_closure_supremum": 2.0,
+        "mask_count": 64,
+        "memory": 3,
+        "pass": true,
+        "service_infimum": 0.5,
+        "stratum": "mid_segment",
+        "theta": 1.0,
+        "window_length": 4,
+        "window_start": 2,
+        "witness": {
+          "applicable": false
+        }
+      },
+      {
+        "analytic_supremum": 3.0,
+        "argmax_shortfall": [
+          0.0,
+          0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          -0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "mid_L2_M6_W7_theta1",
+        "ell": 2,
+        "lp_closure_supremum": 3.0,
+        "mask_count": 512,
+        "memory": 6,
+        "pass": true,
+        "service_infimum": 0.5714285714285714,
+        "stratum": "mid_segment",
+        "theta": 1.0,
+        "window_length": 7,
+        "window_start": 2,
+        "witness": {
+          "applicable": false
+        }
+      },
+      {
+        "analytic_supremum": 4.0,
+        "argmax_shortfall": [
+          0.0,
+          -0.0,
+          -0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "case_id": "mid_L3_M3_W6_theta1",
+        "ell": 3,
+        "lp_closure_supremum": 4.0,
+        "mask_count": 128,
+        "memory": 3,
+        "pass": true,
+        "service_infimum": 0.33333333333333337,
+        "stratum": "mid_segment",
+        "theta": 1.0,
+        "window_length": 6,
+        "window_start": 1,
+        "witness": {
+          "applicable": false
+        }
+      }
+    ],
+    "mask_count": 3044
+  },
+  "independent_finite_grid": {
+    "all_pass": true,
+    "case_count": 3,
+    "cases": [
+      {
+        "analytic_supremum": 3.0,
+        "case_id": "finite_production_L2_M6_W7_theta1",
+        "max_realized_shortfall": 2.5,
+        "maximizing_base_shortfall": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          1.0,
+          1.0
+        ],
+        "pass": true,
+        "shortfall_support": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "trajectory_count": 2187
+      },
+      {
+        "analytic_supremum": 2.0,
+        "case_id": "finite_lag1_L1_M6_W7_theta1",
+        "max_realized_shortfall": 1.5,
+        "maximizing_base_shortfall": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          1.0
+        ],
+        "pass": true,
+        "shortfall_support": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "trajectory_count": 2187
+      },
+      {
+        "analytic_supremum": 4.0,
+        "case_id": "finite_L3_M3_W6_theta1",
+        "max_realized_shortfall": 3.5,
+        "maximizing_base_shortfall": [
+          0.0,
+          0.0,
+          0.5,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "pass": true,
+        "shortfall_support": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "trajectory_count": 729
+      }
+    ],
+    "trajectory_count": 5103
+  },
+  "production_identity": {
+    "details": [
+      "production imports: run_nyiso_scientific_matrix._drb_lag2_state (scripts/card10_baselines), card10_p03.cmsd_controller.DRBStrictLag2Controller (scripts/card10_p03)",
+      "identity axes: actions (bool), service s_t (float); tolerances: actions exact-equal, service np.allclose(default)",
+      "  case 'segment_start' (n=60, nseg=1, cap=1000000000): actions mine/prod/cmsd = 34/34/34; service max|mine-cmsd| = 0.00e+00 -> MATCH",
+      "  case 'mid_segment' (n=120, nseg=1, cap=1000000000): actions mine/prod/cmsd = 71/71/71; service max|mine-cmsd| = 0.00e+00 -> MATCH",
+      "  case 'multi_segment_reset' (n=200, nseg=4, cap=1000000000): actions mine/prod/cmsd = 117/117/117; service max|mine-cmsd| = 0.00e+00 -> MATCH",
+      "  case 'threshold_equality' (n=80, nseg=1, cap=1000000000): actions mine/prod/cmsd = 53/53/53; service max|mine-cmsd| = 0.00e+00 -> MATCH",
+      "  case 'cap_exhaustion' (n=200, nseg=1, cap=8): actions mine/prod/cmsd = 8/8/8; service max|mine-cmsd| = 0.00e+00 -> MATCH",
+      "simulate_continuous == _drb_lag2_state == DRBStrictLag2Controller on 5 cases (segment_start, mid_segment, multi_segment_reset, threshold_equality, cap_exhaustion): PASS"
+    ],
+    "status": "PASS"
+  },
+  "protocol": {
+    "bytes": 5705,
+    "lock_status": "FROZEN_UNCOMMITTED_WORKTREE",
+    "path": "reports/card10_MR-P0-1_参数化连续DRB下界协议_FROZEN_2026-07-22.md",
+    "sha256": "ee937555401e267dc8162bd4d63bf8b9afb5763d83801820426aff60b60cf067"
+  },
+  "schema": "card10.mr_p0_1_parametric_floor_verification.v1",
+  "status": "PASS"
+}

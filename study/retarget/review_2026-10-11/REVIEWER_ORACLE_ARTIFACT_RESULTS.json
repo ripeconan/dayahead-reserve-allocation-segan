@@ -1,0 +1,120 @@
+{
+  "n_origins": 7,
+  "n_oracle_objects": 14,
+  "failures": [],
+  "all_pass": true,
+  "rows": [
+    {
+      "origin": "2018->2019",
+      "oracle": "oracle_count",
+      "worst7": 0.9166666666666666,
+      "rescue": 15.01086956521739,
+      "actions": 38,
+      "all_pass": true
+    },
+    {
+      "origin": "2018->2019",
+      "oracle": "oracle_cap",
+      "worst7": 0.9389233954451345,
+      "rescue": 18.5,
+      "actions": 55,
+      "all_pass": true
+    },
+    {
+      "origin": "2019->2020",
+      "oracle": "oracle_count",
+      "worst7": 0.8928571428571427,
+      "rescue": 9.25,
+      "actions": 23,
+      "all_pass": true
+    },
+    {
+      "origin": "2019->2020",
+      "oracle": "oracle_cap",
+      "worst7": 0.9285714285714286,
+      "rescue": 16.666666666666668,
+      "actions": 55,
+      "all_pass": true
+    },
+    {
+      "origin": "2020->2021",
+      "oracle": "oracle_count",
+      "worst7": 0.8988095238095238,
+      "rescue": 15.5,
+      "actions": 39,
+      "all_pass": true
+    },
+    {
+      "origin": "2020->2021",
+      "oracle": "oracle_cap",
+      "worst7": 0.9166666666666666,
+      "rescue": 19.375,
+      "actions": 53,
+      "all_pass": true
+    },
+    {
+      "origin": "2021->2022",
+      "oracle": "oracle_count",
+      "worst7": 0.9166666666666666,
+      "rescue": 19.208333333333336,
+      "actions": 50,
+      "all_pass": true
+    },
+    {
+      "origin": "2021->2022",
+      "oracle": "oracle_cap",
+      "worst7": 0.9166666666666666,
+      "rescue": 20.791666666666668,
+      "actions": 55,
+      "all_pass": true
+    },
+    {
+      "origin": "2022->2023",
+      "oracle": "oracle_count",
+      "worst7": 0.9345238095238094,
+      "rescue": 20.208333333333332,
+      "actions": 52,
+      "all_pass": true
+    },
+    {
+      "origin": "2022->2023",
+      "oracle": "oracle_cap",
+      "worst7": 0.9345238095238094,
+      "rescue": 21.0,
+      "actions": 55,
+      "all_pass": true
+    },
+    {
+      "origin": "2023->2024",
+      "oracle": "oracle_count",
+      "worst7": 0.9345238095238094,
+      "rescue": 20.833333333333336,
+      "actions": 55,
+      "all_pass": true
+    },
+    {
+      "origin": "2023->2024",
+      "oracle": "oracle_cap",
+      "worst7": 0.9345238095238094,
+      "rescue": 20.833333333333336,
+      "actions": 55,
+      "all_pass": true
+    },
+    {
+      "origin": "2024->2025",
+      "oracle": "oracle_count",
+      "worst7": 0.8869047619047619,
+      "rescue": 10.666666666666666,
+      "actions": 23,
+      "all_pass": true
+    },
+    {
+      "origin": "2024->2025",
+      "oracle": "oracle_cap",
+      "worst7": 0.9285714285714285,
+      "rescue": 19.125,
+      "actions": 55,
+      "all_pass": true
+    }
+  ]
+}

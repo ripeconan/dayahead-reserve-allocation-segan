@@ -1,0 +1,24 @@
+
+\begin{table}[!tbp]
+\centering
+\caption{Native rectangular probabilistic forecast metrics on exposed NYISO.}
+\label{tab:native}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & RMSE & WAPE (\%) & Marginal cov. & 11-zone cov. & Width & WQL \\
+\midrule
+DeepAR & 74.945 & 2.796 & 0.862 & 0.315 & 166.7 & 0.0148 \\
+N-HiTS & 73.165 & 2.772 & 0.890 & 0.395 & 184.0 & 0.0146 \\
+PatchTST & 73.704 & 2.776 & 0.892 & 0.412 & 181.7 & 0.0147 \\
+TFT & 76.738 & 2.825 & 0.873 & 0.341 & 164.9 & 0.0149 \\
+ProLoaF & 75.787 & 2.925 & 0.922 & 0.513 & 216.3 & 0.0155 \\
+\bottomrule
+\end{tabular}
+\par\footnotesize These are native rectangular quantile outputs. Their marginal and simultaneous coverage are not the common multivariate OAS-region estimand used in the main-paper common-UQ comparison.
+\par\footnotesize The five models are P7-residual adaptations. Coverage and interval
+width describe native forecast rectangles, without fallback service.
+WQL is weighted quantile loss; these rows do not establish a common-OAS
+coverage, volume, or worst-window service ranking.
+\end{table}

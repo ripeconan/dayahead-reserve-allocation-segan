@@ -1,0 +1,5 @@
+base_method,candidate_id,endpoint,contrast,effect,n_boot,n_origins,iid_ci_lo,iid_ci_hi,block2_ci_lo,block2_ci_hi,block3_ci_lo,block3_ci_hi,ci_semantics
+saocp,saocp_verified_ast_lifetime8,service_worst7,drb_reactive_lag2_minus_no_fallback,0.09438775510204082,10000,7,0.05102040816326535,0.15306122448979595,0.045918367346938785,0.15646258503401364,0.04761904761904764,0.15731292517006804,descriptive
+saocp,saocp_verified_ast_lifetime8,mean_volume,drb_reactive_lag2_minus_no_fallback,0.0,10000,7,0.0,0.0,0.0,0.0,0.0,0.0,descriptive
+saocp,saocp_verified_ast_lifetime8,action_rate,drb_reactive_lag2_minus_no_fallback,0.11011445823931788,10000,7,0.08488231582774587,0.1336541443435672,0.08647246906847177,0.13675353515910443,0.08605648412520185,0.13675353515910443,descriptive
+saocp,saocp_verified_ast_lifetime8,L_lambda_1,drb_reactive_lag2_minus_no_fallback,0.10083643574032077,10000,7,0.07643349053072836,0.12283915961773585,0.07911920624226934,0.12436229445816778,0.07833509066475607,0.12577521787043458,descriptive

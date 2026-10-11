@@ -1,0 +1,27 @@
+
+\begin{table}[!tbp]
+\centering
+\caption{Forecast-region methods and fallback allocation roles.}
+\label{tab:methods}
+\scriptsize
+\renewcommand{\arraystretch}{0.88}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}l l >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X@{}}
+\toprule
+Method & Layer & Information contract & Evaluation role \\
+\midrule
+Static OAS & Common region & Fixed reference & Region-only baseline \\
+Rolling empirical & Common region & Strict lag-2 rolling scores & Region-only baseline \\
+ACI & Common region & Strict lag-2 score feedback & Adaptive baseline \\
+PID-P / PID-PI & Common region & Strict lag-2 score feedback & Adaptive baselines \\
+SAOCP & Common region & Verified AST, strict lag-2 & Primary conformal base \\
+UP-OCP & Common region & Strict lag-2 score feedback & Strong online baseline \\
+Areces online optimization & Common region & Pinned official implementation, strict lag-2 & Strong online baseline \\
+DRB & Action layer & Eligible service through $t-2$ & Production modeled-service shield \\
+COCD & Action sensitivity & Strict lag-2 conditional on fixed segment budget/end & Exact-count exposed diagnostic \\
+$A^\star$ & Action layer & Registered horizon end and global cap & Registered-horizon causal comparator \\
+Random matched & Action sensitivity & Outcome-independent positions; post-hoc matched count & Descriptive sensitivity only \\
+\bottomrule
+\end{tabularx}
+\par\footnotesize Raw common-shell, retrospective coverage-matched, and retrospective static-volume-matched views are separate estimands. Matching is not an online controller. Native rectangular forecasts are reported separately in Supplementary Table~S18.
+\end{table}

@@ -1,0 +1,217 @@
+{
+  "all_pass": true,
+  "reviewer_script_sha256": "522b5d863fe73021a495fe7676f69994f8f0ec75b9b3e3d64a0bab51bf4e4924",
+  "raw_sha256": "d9e492532e22bc3f41c6967acf99cc5b49a49ae2e5ba3ae3b7dbc8092d9e5d0d",
+  "records": [
+    {
+      "origin": 2019,
+      "date": "2019-01-02",
+      "n_hours": 24,
+      "train_rows": 8760,
+      "newest_label": "2018-12-31 23:00:00-05:00",
+      "cutoff": "2019-01-01 00:00:00-05:00",
+      "max_error_MW": 2.7284841053187847e-12,
+      "passed": true
+    },
+    {
+      "origin": 2019,
+      "date": "2019-07-01",
+      "n_hours": 24,
+      "train_rows": 8760,
+      "newest_label": "2019-06-29 23:00:00-04:00",
+      "cutoff": "2019-06-30 00:00:00-04:00",
+      "max_error_MW": 4.547473508864641e-12,
+      "passed": true
+    },
+    {
+      "origin": 2019,
+      "date": "2019-11-03",
+      "n_hours": 25,
+      "train_rows": 8760,
+      "newest_label": "2019-11-01 23:00:00-04:00",
+      "cutoff": "2019-11-02 00:00:00-04:00",
+      "max_error_MW": 4.547473508864641e-12,
+      "passed": true
+    },
+    {
+      "origin": 2020,
+      "date": "2020-01-02",
+      "n_hours": 24,
+      "train_rows": 8760,
+      "newest_label": "2019-12-31 23:00:00-05:00",
+      "cutoff": "2020-01-01 00:00:00-05:00",
+      "max_error_MW": 3.637978807091713e-12,
+      "passed": true
+    },
+    {
+      "origin": 2020,
+      "date": "2020-07-01",
+      "n_hours": 24,
+      "train_rows": 8760,
+      "newest_label": "2020-06-29 23:00:00-04:00",
+      "cutoff": "2020-06-30 00:00:00-04:00",
+      "max_error_MW": 4.092726157978177e-12,
+      "passed": true
+    },
+    {
+      "origin": 2020,
+      "date": "2020-11-01",
+      "n_hours": 25,
+      "train_rows": 8760,
+      "newest_label": "2020-10-30 23:00:00-04:00",
+      "cutoff": "2020-10-31 00:00:00-04:00",
+      "max_error_MW": 4.092726157978177e-12,
+      "passed": true
+    },
+    {
+      "origin": 2021,
+      "date": "2021-01-02",
+      "n_hours": 24,
+      "train_rows": 8760,
+      "newest_label": "2020-12-31 23:00:00-05:00",
+      "cutoff": "2021-01-01 00:00:00-05:00",
+      "max_error_MW": 2.7284841053187847e-12,
+      "passed": true
+    },
+    {
+      "origin": 2021,
+      "date": "2021-07-01",
+      "n_hours": 24,
+      "train_rows": 8424,
+      "newest_label": "2021-06-29 23:00:00-04:00",
+      "cutoff": "2021-06-30 00:00:00-04:00",
+      "max_error_MW": 3.637978807091713e-12,
+      "passed": true
+    },
+    {
+      "origin": 2021,
+      "date": "2021-11-07",
+      "n_hours": 25,
+      "train_rows": 8423,
+      "newest_label": "2021-11-05 23:00:00-04:00",
+      "cutoff": "2021-11-06 00:00:00-04:00",
+      "max_error_MW": 1.8189894035458565e-12,
+      "passed": true
+    },
+    {
+      "origin": 2022,
+      "date": "2022-01-02",
+      "n_hours": 24,
+      "train_rows": 8424,
+      "newest_label": "2021-12-31 23:00:00-05:00",
+      "cutoff": "2022-01-01 00:00:00-05:00",
+      "max_error_MW": 3.410605131648481e-12,
+      "passed": true
+    },
+    {
+      "origin": 2022,
+      "date": "2022-07-01",
+      "n_hours": 24,
+      "train_rows": 8760,
+      "newest_label": "2022-06-29 23:00:00-04:00",
+      "cutoff": "2022-06-30 00:00:00-04:00",
+      "max_error_MW": 1.8189894035458565e-12,
+      "passed": true
+    },
+    {
+      "origin": 2022,
+      "date": "2022-11-06",
+      "n_hours": 25,
+      "train_rows": 8760,
+      "newest_label": "2022-11-04 23:00:00-04:00",
+      "cutoff": "2022-11-05 00:00:00-04:00",
+      "max_error_MW": 1.8189894035458565e-12,
+      "passed": true
+    },
+    {
+      "origin": 2023,
+      "date": "2023-01-02",
+      "n_hours": 24,
+      "train_rows": 8760,
+      "newest_label": "2022-12-31 23:00:00-05:00",
+      "cutoff": "2023-01-01 00:00:00-05:00",
+      "max_error_MW": 2.2737367544323206e-12,
+      "passed": true
+    },
+    {
+      "origin": 2023,
+      "date": "2023-07-01",
+      "n_hours": 24,
+      "train_rows": 8760,
+      "newest_label": "2023-06-29 23:00:00-04:00",
+      "cutoff": "2023-06-30 00:00:00-04:00",
+      "max_error_MW": 1.8189894035458565e-12,
+      "passed": true
+    },
+    {
+      "origin": 2023,
+      "date": "2023-11-05",
+      "n_hours": 25,
+      "train_rows": 8760,
+      "newest_label": "2023-11-03 23:00:00-04:00",
+      "cutoff": "2023-11-04 00:00:00-04:00",
+      "max_error_MW": 1.3642420526593924e-12,
+      "passed": true
+    },
+    {
+      "origin": 2024,
+      "date": "2024-01-02",
+      "n_hours": 24,
+      "train_rows": 8760,
+      "newest_label": "2023-12-31 23:00:00-05:00",
+      "cutoff": "2024-01-01 00:00:00-05:00",
+      "max_error_MW": 9.094947017729282e-13,
+      "passed": true
+    },
+    {
+      "origin": 2024,
+      "date": "2024-07-01",
+      "n_hours": 24,
+      "train_rows": 8760,
+      "newest_label": "2024-06-29 23:00:00-04:00",
+      "cutoff": "2024-06-30 00:00:00-04:00",
+      "max_error_MW": 2.2737367544323206e-12,
+      "passed": true
+    },
+    {
+      "origin": 2024,
+      "date": "2024-11-03",
+      "n_hours": 25,
+      "train_rows": 8760,
+      "newest_label": "2024-11-01 23:00:00-04:00",
+      "cutoff": "2024-11-02 00:00:00-04:00",
+      "max_error_MW": 9.094947017729282e-13,
+      "passed": true
+    },
+    {
+      "origin": 2025,
+      "date": "2025-01-02",
+      "n_hours": 24,
+      "train_rows": 8760,
+      "newest_label": "2024-12-31 23:00:00-05:00",
+      "cutoff": "2025-01-01 00:00:00-05:00",
+      "max_error_MW": 9.094947017729282e-13,
+      "passed": true
+    },
+    {
+      "origin": 2025,
+      "date": "2025-07-01",
+      "n_hours": 24,
+      "train_rows": 8760,
+      "newest_label": "2025-06-29 23:00:00-04:00",
+      "cutoff": "2025-06-30 00:00:00-04:00",
+      "max_error_MW": 2.7284841053187847e-12,
+      "passed": true
+    },
+    {
+      "origin": 2025,
+      "date": "2025-11-02",
+      "n_hours": 25,
+      "train_rows": 8760,
+      "newest_label": "2025-10-31 23:00:00-04:00",
+      "cutoff": "2025-11-01 00:00:00-04:00",
+      "max_error_MW": 1.8189894035458565e-12,
+      "passed": true
+    }
+  ]
+}

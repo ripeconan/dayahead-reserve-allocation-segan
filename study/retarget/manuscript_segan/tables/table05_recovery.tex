@@ -1,0 +1,32 @@
+
+\begin{table}[!tbp]
+\centering
+\caption{Registered recovery comparisons with prior outcome access:
+modeled service, action use, and loss.}
+\label{tab:recovery}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\textit{Panel A: policy summaries}\\[2pt]
+\begin{tabular}{lrrrrr}
+\toprule
+Policy & Block mean $W_7$ & Full mean & Full $W_7$ & Actions & $L_1$ \\
+\midrule
+BASE & 0.835 & 0.894 & 0.643 & 0 & 0.106 \\
+$A^\star$ & 0.848 & 0.906 & 0.673 & 27 & 0.243 \\
+D1 (DRB) & 0.849 & 0.904 & 0.673 & 27 & 0.245 \\
+\bottomrule
+\end{tabular}
+
+\vspace{5pt}
+\textit{Panel B: registered family}\\[2pt]
+\begin{tabular}{lrrrrl}
+\toprule
+Contrast & Effect & Block-2 95\% CI & Raw $p$ & Holm $p$ & Decision \\
+\midrule
+C1: D1 $-$ BASE & 0.0144 & [0.0060, 0.0243] & 0.002 & 0.007 & Reject \\
+C2: D1 $- A^\star$ & 0.0010 & [0.0000, 0.0020] & 0.034 & 0.069 & Do not reject \\
+C3: D1 $- C^\star$ & -- & -- & -- & 1.000 & Not evaluable \\
+\bottomrule
+\end{tabular}
+\par\footnotesize Panel A full-period values are non-primary sensitivity summaries; Panel B reports the registered three-member family on 12 chronological blocks. Here $A^\star$ denotes $\SAOCP{+}A^\star$, sharing the base region trace with D1. The frozen analysis was retained after technical recovery with prior outcome access, not pristine outcome-unseen confirmation. Superiority to $\SAOCP{+}A^\star$ is not established; non-rejection establishes neither equivalence nor non-inferiority.
+\end{table}

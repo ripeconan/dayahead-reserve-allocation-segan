@@ -1,0 +1,283 @@
+{
+  "schema": "card10_r86_fair_deep_candidate_grid_v1",
+  "frozen_before_2019_2025_evaluation": true,
+  "purpose": "Development-only selection for fair reruns of four previously single-configuration deep baselines",
+  "implementations": {
+    "TFT": {
+      "package": "pytorch-forecasting",
+      "version": "1.8.0",
+      "estimator": "TemporalFusionTransformer"
+    },
+    "NHiTS": {
+      "package": "neuralforecast",
+      "version": "1.7.7",
+      "estimator": "NHITS"
+    },
+    "PatchTST": {
+      "package": "neuralforecast",
+      "version": "1.7.7",
+      "estimator": "PatchTST"
+    },
+    "ProLoaF": {
+      "repository": "sogno-platform/proloaf",
+      "commit": "e4a85c9dda725e7a5063899e805fa22a2f5e1129",
+      "adapter": "vendored public ProLoaF recurrent quantile implementation"
+    }
+  },
+  "information_set": {
+    "timezone": "America/New_York",
+    "feedback_lag_delivery_days": 2,
+    "prediction_length_hours": 49,
+    "target_day_selection": "select exact local delivery date from a UTC-continuous 49-hour path",
+    "target_modes": {
+      "load_level": "predict system load directly",
+      "p7_residual": "predict actual minus the day-ahead operator P7 forecast, then add P7 back"
+    },
+    "known_future_features": [
+      "p7_forecast_when_supported_by_the_model_adapter",
+      "local_calendar_features_when_supported_by_the_model_adapter"
+    ],
+    "forbidden": [
+      "day_t_minus_1_outcome",
+      "2019_2025_metrics_for_selection",
+      "2026_confirmatory_values",
+      "r77_d2_values"
+    ]
+  },
+  "development": {
+    "train_end_exclusive_local": "2018-07-01",
+    "validation_end_exclusive_local": "2018-10-01",
+    "selection_start_local": "2018-10-01",
+    "selection_end_local": "2018-12-31",
+    "selection_day_stride": 3,
+    "primary_loss": "mean_over_q_of_2_sum_pinball_q_div_sum_abs_actual",
+    "quantiles": [0.05, 0.5, 0.95],
+    "tie_break": [
+      "mae",
+      "runtime_seconds",
+      "model_size_proxy",
+      "candidate_id"
+    ]
+  },
+  "evaluation": {
+    "origins": [2019, 2020, 2021, 2022, 2023, 2024, 2025],
+    "common_support_origins": [2020, 2021, 2022, 2023, 2024, 2025],
+    "refit": "one model per origin using only information strictly before that origin",
+    "validation": "last 90 local delivery days before each origin; early stopping only",
+    "selected_candidate_is_immutable": true,
+    "required_outputs": [
+      "point_metrics",
+      "native_quantile_metrics_where_supported",
+      "paired_time_aware_inference",
+      "common_multivariate_OAS_SAOCP_DRB_metrics",
+      "runtime_and_model_size",
+      "failure_logs"
+    ]
+  },
+  "shared": {
+    "seed": 86001,
+    "history_days_max": 730,
+    "gradient_clip_val": 1.0
+  },
+  "candidates": [
+    {
+      "model": "TFT",
+      "candidate_id": "tft_level_h32_e20",
+      "target_mode": "load_level",
+      "hidden_size": 32,
+      "lstm_layers": 1,
+      "attention_head_size": 2,
+      "encoder_length": 168,
+      "learning_rate": 0.001,
+      "max_epochs": 20,
+      "early_stopping_patience": 5,
+      "batch_size": 256,
+      "limit_train_batches": 350
+    },
+    {
+      "model": "TFT",
+      "candidate_id": "tft_level_h64_e20",
+      "target_mode": "load_level",
+      "hidden_size": 64,
+      "lstm_layers": 2,
+      "attention_head_size": 4,
+      "encoder_length": 336,
+      "learning_rate": 0.0005,
+      "max_epochs": 20,
+      "early_stopping_patience": 5,
+      "batch_size": 128,
+      "limit_train_batches": 350
+    },
+    {
+      "model": "TFT",
+      "candidate_id": "tft_resid_h32_e20",
+      "target_mode": "p7_residual",
+      "hidden_size": 32,
+      "lstm_layers": 1,
+      "attention_head_size": 2,
+      "encoder_length": 168,
+      "learning_rate": 0.001,
+      "max_epochs": 20,
+      "early_stopping_patience": 5,
+      "batch_size": 256,
+      "limit_train_batches": 350
+    },
+    {
+      "model": "TFT",
+      "candidate_id": "tft_resid_h64_e20",
+      "target_mode": "p7_residual",
+      "hidden_size": 64,
+      "lstm_layers": 2,
+      "attention_head_size": 4,
+      "encoder_length": 336,
+      "learning_rate": 0.0005,
+      "max_epochs": 20,
+      "early_stopping_patience": 5,
+      "batch_size": 128,
+      "limit_train_batches": 350
+    },
+    {
+      "model": "NHiTS",
+      "candidate_id": "nhits_level_i168_s1000",
+      "target_mode": "load_level",
+      "input_size": 168,
+      "max_steps": 1000,
+      "learning_rate": 0.001,
+      "early_stop_patience_steps": 5,
+      "val_check_steps": 50,
+      "batch_size": 64,
+      "windows_batch_size": 512
+    },
+    {
+      "model": "NHiTS",
+      "candidate_id": "nhits_level_i336_s1000",
+      "target_mode": "load_level",
+      "input_size": 336,
+      "max_steps": 1000,
+      "learning_rate": 0.001,
+      "early_stop_patience_steps": 5,
+      "val_check_steps": 50,
+      "batch_size": 64,
+      "windows_batch_size": 512
+    },
+    {
+      "model": "NHiTS",
+      "candidate_id": "nhits_resid_i168_s1000",
+      "target_mode": "p7_residual",
+      "input_size": 168,
+      "max_steps": 1000,
+      "learning_rate": 0.001,
+      "early_stop_patience_steps": 5,
+      "val_check_steps": 50,
+      "batch_size": 64,
+      "windows_batch_size": 512
+    },
+    {
+      "model": "NHiTS",
+      "candidate_id": "nhits_resid_i336_s1000",
+      "target_mode": "p7_residual",
+      "input_size": 336,
+      "max_steps": 1000,
+      "learning_rate": 0.001,
+      "early_stop_patience_steps": 5,
+      "val_check_steps": 50,
+      "batch_size": 64,
+      "windows_batch_size": 512
+    },
+    {
+      "model": "PatchTST",
+      "candidate_id": "patchtst_level_i168_s1000",
+      "target_mode": "load_level",
+      "input_size": 168,
+      "max_steps": 1000,
+      "learning_rate": 0.0005,
+      "early_stop_patience_steps": 5,
+      "val_check_steps": 50,
+      "batch_size": 64,
+      "windows_batch_size": 512
+    },
+    {
+      "model": "PatchTST",
+      "candidate_id": "patchtst_level_i336_s1000",
+      "target_mode": "load_level",
+      "input_size": 336,
+      "max_steps": 1000,
+      "learning_rate": 0.0005,
+      "early_stop_patience_steps": 5,
+      "val_check_steps": 50,
+      "batch_size": 64,
+      "windows_batch_size": 512
+    },
+    {
+      "model": "PatchTST",
+      "candidate_id": "patchtst_resid_i168_s1000",
+      "target_mode": "p7_residual",
+      "input_size": 168,
+      "max_steps": 1000,
+      "learning_rate": 0.0005,
+      "early_stop_patience_steps": 5,
+      "val_check_steps": 50,
+      "batch_size": 64,
+      "windows_batch_size": 512
+    },
+    {
+      "model": "PatchTST",
+      "candidate_id": "patchtst_resid_i336_s1000",
+      "target_mode": "p7_residual",
+      "input_size": 336,
+      "max_steps": 1000,
+      "learning_rate": 0.0005,
+      "early_stop_patience_steps": 5,
+      "val_check_steps": 50,
+      "batch_size": 64,
+      "windows_batch_size": 512
+    },
+    {
+      "model": "ProLoaF",
+      "candidate_id": "proloaf_level_h168_e40",
+      "target_mode": "load_level",
+      "history_hours": 168,
+      "max_epochs": 40,
+      "early_stopping_patience": 5,
+      "learning_rate": 0.0003,
+      "batch_size": 256
+    },
+    {
+      "model": "ProLoaF",
+      "candidate_id": "proloaf_level_h336_e40",
+      "target_mode": "load_level",
+      "history_hours": 336,
+      "max_epochs": 40,
+      "early_stopping_patience": 5,
+      "learning_rate": 0.0003,
+      "batch_size": 256
+    },
+    {
+      "model": "ProLoaF",
+      "candidate_id": "proloaf_resid_h168_e40",
+      "target_mode": "p7_residual",
+      "history_hours": 168,
+      "max_epochs": 40,
+      "early_stopping_patience": 5,
+      "learning_rate": 0.0003,
+      "batch_size": 256
+    },
+    {
+      "model": "ProLoaF",
+      "candidate_id": "proloaf_resid_h336_e40",
+      "target_mode": "p7_residual",
+      "history_hours": 336,
+      "max_epochs": 40,
+      "early_stopping_patience": 5,
+      "learning_rate": 0.0003,
+      "batch_size": 256
+    }
+  ],
+  "access_flags": {
+    "confirmatory_2026_outcome_accessed": false,
+    "confirmatory_2026_forecast_payload_accessed": false,
+    "reserved_confirmatory_path_accessed": false,
+    "r77_d2_values_accessed": false,
+    "sota_claimed": false
+  }
+}

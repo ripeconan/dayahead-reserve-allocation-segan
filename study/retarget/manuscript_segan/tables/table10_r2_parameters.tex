@@ -1,0 +1,45 @@
+\begin{table}[!tbp]
+\centering
+\caption{Declared quantities of the end-to-end design: symbols, units, and
+pre-declared grids. Every value is fixed before evaluation support is read.}
+\label{tab:r2-params}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}l p{0.30\textwidth} p{0.34\textwidth}@{}}
+\toprule
+Symbol & Meaning & Unit or value \\
+\midrule
+$T_{\mathrm{planned}}$ & declared calendar length, Jan~2--Dec~31 &
+  $364$ or $365$ days; $H_t\in\{23,24,25\}$ hours per day \\
+$B$ & horizon commitment cap & committed days,
+  $\mathrm{round}(0.15\,T_{\mathrm{planned}})=55$; nonreplenishable \\
+$\ell$ & feedback lag of a completed daily outcome & $2$ delivery days \\
+$m,\ \theta$ & memory and threshold of the production rule P &
+  $6$ records; $\theta=1.0$ normalized shortfall \\
+policies & commitment menu & none, P, F1 pace-7, F2 bank-pace,
+  F3 two-low, F4 persistence, F5 declared-end bank \\
+$e_{t,h,z}$ & residual, actual minus issued point & MW, Eq.~\eqref{eq:residual} \\
+$r^{0}_{t,h,z}$ & no-commitment zonal requirement & MW, Eq.~\eqref{eq:r0} \\
+$H_z$ & reference headroom scale & MW, reference-year 95th percentile of the
+  positive corrected residual, Eq.~\eqref{eq:Hz} \\
+$\eta$ & capacity multiplier on committed days & dimensionless,
+  $\{0,0.5,1,2\}$ \\
+$\Delta_t$ & uncovered deficit of a day & MWh, positive part integrated over
+  real hours, Eq.~\eqref{eq:deficit} \\
+adequacy & one-sided all-zone adequacy & indicator per hour; daily mean over
+  complete observed hours \\
+$\kappa$ & capacity-to-deficit price ratio & dimensionless, nine declared
+  values (table note), Eq.~\eqref{eq:cost} \\
+$\lambda$ & modeled penalty per committed day & $\{0.25,0.5,1,2,4\}$ on the
+  modeled-shortfall scale, Eq.~\eqref{eq:modeled-loss} \\
+inference & paired per-origin intervals & $10{,}000$ IID-over-origin
+  bootstrap draws, seed $20261011$, plus leave-one-origin-out means \\
+\bottomrule
+\end{tabular}
+\par\footnotesize The nine declared $\kappa$ values are $0$, $0.001$, $0.005$,
+$0.01$, $0.025$, $0.05$, $0.1$, $0.25$ and $0.5$. Capacity quantities are
+capacity-time (MW$\cdot$h) booked on committed days and are not generated
+electricity. $\eta$ is a capacity multiplier, not a success probability;
+$\kappa=c_R/c_D$ converts booked capacity into an MWh-equivalent normalization
+and is not a market price.
+\end{table}

@@ -1,0 +1,61 @@
+{
+  "all_pass": true,
+  "rows": [
+    {
+      "origin": "2018->2019",
+      "support_equal": true,
+      "cocd_w7": 0.7202380952380951,
+      "f5_w7": 0.7202380952380951,
+      "delta": 0.0,
+      "action_disagreements": 0
+    },
+    {
+      "origin": "2019->2020",
+      "support_equal": true,
+      "cocd_w7": 0.6547619047619048,
+      "f5_w7": 0.6547619047619048,
+      "delta": 0.0,
+      "action_disagreements": 0
+    },
+    {
+      "origin": "2020->2021",
+      "support_equal": true,
+      "cocd_w7": 0.7142857142857143,
+      "f5_w7": 0.7142857142857143,
+      "delta": 0.0,
+      "action_disagreements": 0
+    },
+    {
+      "origin": "2021->2022",
+      "support_equal": true,
+      "cocd_w7": 0.6488095238095238,
+      "f5_w7": 0.6488095238095238,
+      "delta": 0.0,
+      "action_disagreements": 0
+    },
+    {
+      "origin": "2022->2023",
+      "support_equal": true,
+      "cocd_w7": 0.6726190476190476,
+      "f5_w7": 0.6726190476190476,
+      "delta": 0.0,
+      "action_disagreements": 0
+    },
+    {
+      "origin": "2023->2024",
+      "support_equal": true,
+      "cocd_w7": 0.7321428571428571,
+      "f5_w7": 0.7321428571428571,
+      "delta": 0.0,
+      "action_disagreements": 0
+    },
+    {
+      "origin": "2024->2025",
+      "support_equal": true,
+      "cocd_w7": 0.7738095238095238,
+      "f5_w7": 0.7738095238095238,
+      "delta": 0.0,
+      "action_disagreements": 2
+    }
+  ]
+}

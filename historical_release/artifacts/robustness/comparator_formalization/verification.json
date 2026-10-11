@@ -1,0 +1,58 @@
+{
+  "access_flags": {
+    "existing_admitted_traces_accessed": true,
+    "network_used": false,
+    "new_outcome_accessed": false,
+    "reserved_outcome_accessed": false,
+    "ssh_used": false
+  },
+  "complexity": {
+    "optimization_claimed": false,
+    "reference_allocator_memory": "O(max_g n_g)",
+    "reference_allocator_time": "O(sum_g n_g^2) because each tail rank scans prior segment history"
+  },
+  "r45_budget_conditioned_cocd": {
+    "binary_bank": true,
+    "candidate_actions": 280,
+    "contiguous_segments": 8,
+    "daily_rows": 2543,
+    "deployable_without_budget_or_end_oracle": false,
+    "exact_action_count_every_segment": true,
+    "origins": 7,
+    "shadow_actions": 280,
+    "uses_evaluation_segment_end_for_flush": true,
+    "uses_preassigned_full_segment_shadow_budget": true,
+    "zero_bank_at_every_segment_end": true
+  },
+  "recovery_astar_registered_horizon": {
+    "binary_bank": true,
+    "candidate_actions": 27,
+    "cap": 27,
+    "daily_rows": 181,
+    "future_segment_end_field_present": false,
+    "observed_gap_reset_disposition_retained": true,
+    "realized_action_count_equal_to_d1": true,
+    "registered_end": "2026-06-30",
+    "registered_horizon_countdown_verified": true,
+    "shadow_d1_actions": 27,
+    "zero_final_bank": true
+  },
+  "schema": "card10.mr_p1_2_cocd_astar_formalization_verification.v1",
+  "source_identity": {
+    "confirm_runner_source": {
+      "path": "scripts/card10_confirmatory/confirm_runner.py",
+      "sha256": "13e9371c6c5f1091e0e62375d5d4e7119d8d24e9e35fb40f1fafa4d8079106a7"
+    },
+    "phase2_selection_source": {
+      "path": "scripts/card10_confirmatory/phase2_selection.py",
+      "sha256": "80eae2caec34859c23f9bb401c9ef2305896397db4b7f1c565b82c74cf1a50f8"
+    },
+    "r45_manifest": "b67280aba599a25d3a2d107f6334c617c2f3bec96544d08321bee04ab9dceefd",
+    "r45_source": {
+      "path": "scripts/card10_p03/run_conformal_one_credit_deferral_r45.py",
+      "sha256": "9e0a29e4ea5880f8234a20bf4b29124bacec78e057867a6ce8b05ff42fedaec1"
+    },
+    "r67_manifest": "af67c9cd1972c52d2dd5b30e19813ef6276c299b1cef3ac8c494e228df0dccf1"
+  },
+  "status": "PASS"
+}

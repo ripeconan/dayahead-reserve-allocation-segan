@@ -1,0 +1,32 @@
+[2026-10-11T11:19:06+08:00] BEGIN guard suite label=None checkout=/home/icdm/card10_external/online_conformal (cli) selection=['P1_pipeline_end_to_end', 'P2_utc_local_equivalence', 'P3_perturbation_prefixes', 'P4_year_seam', 'P5_dst_structure', 'P6_missing_outcome_retained_costs', 'P7_manifest_tamper_and_skip', 'P8_support_and_windows', 'P9_bridge_arithmetic', 'P10_determinism', 'P11_theory', 'P12_missing_day_forced_action', 'P13_f5_tension_independence', 'P14_aggregate_admission_and_signs', 'P15_bootstrap_draw_equivalence']
+[2026-10-11T11:19:06+08:00] BEGIN P1_pipeline_end_to_end
+[2026-10-11T11:19:20+08:00] END P1_pipeline_end_to_end status=PASS seconds=14.37
+[2026-10-11T11:19:20+08:00] BEGIN P2_utc_local_equivalence
+[2026-10-11T11:19:47+08:00] END P2_utc_local_equivalence status=PASS seconds=27.08
+[2026-10-11T11:19:47+08:00] BEGIN P3_perturbation_prefixes
+[2026-10-11T11:20:22+08:00] END P3_perturbation_prefixes status=PASS seconds=34.67
+[2026-10-11T11:20:22+08:00] BEGIN P4_year_seam
+[2026-10-11T11:20:35+08:00] END P4_year_seam status=PASS seconds=13.54
+[2026-10-11T11:20:35+08:00] BEGIN P5_dst_structure
+[2026-10-11T11:20:49+08:00] END P5_dst_structure status=PASS seconds=13.9
+[2026-10-11T11:20:49+08:00] BEGIN P6_missing_outcome_retained_costs
+[2026-10-11T11:21:01+08:00] END P6_missing_outcome_retained_costs status=PASS seconds=11.56
+[2026-10-11T11:21:01+08:00] BEGIN P7_manifest_tamper_and_skip
+[2026-10-11T11:21:40+08:00] END P7_manifest_tamper_and_skip status=PASS seconds=39.7
+[2026-10-11T11:21:40+08:00] BEGIN P8_support_and_windows
+[2026-10-11T11:21:40+08:00] END P8_support_and_windows status=PASS seconds=0.0
+[2026-10-11T11:21:40+08:00] BEGIN P9_bridge_arithmetic
+[2026-10-11T11:21:40+08:00] END P9_bridge_arithmetic status=PASS seconds=0.0
+[2026-10-11T11:21:40+08:00] BEGIN P10_determinism
+[2026-10-11T11:22:07+08:00] END P10_determinism status=PASS seconds=27.07
+[2026-10-11T11:22:07+08:00] BEGIN P11_theory
+[2026-10-11T11:22:08+08:00] END P11_theory status=PASS seconds=0.48
+[2026-10-11T11:22:08+08:00] BEGIN P12_missing_day_forced_action
+[2026-10-11T11:22:20+08:00] END P12_missing_day_forced_action status=PASS seconds=12.17
+[2026-10-11T11:22:20+08:00] BEGIN P13_f5_tension_independence
+[2026-10-11T11:22:47+08:00] END P13_f5_tension_independence status=PASS seconds=27.26
+[2026-10-11T11:22:47+08:00] BEGIN P14_aggregate_admission_and_signs
+[2026-10-11T11:22:51+08:00] END P14_aggregate_admission_and_signs status=PASS seconds=3.4
+[2026-10-11T11:22:51+08:00] BEGIN P15_bootstrap_draw_equivalence
+[2026-10-11T11:22:51+08:00] END P15_bootstrap_draw_equivalence status=PASS seconds=0.06
+[2026-10-11T11:22:51+08:00] END guard suite complete=True all_selected_pass=True sources_stable=True

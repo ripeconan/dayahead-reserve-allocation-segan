@@ -1,0 +1,213 @@
+{
+  "family": {
+    "adjusted_pvalues": [
+      0.00704964751762412,
+      0.06869656517174141,
+      1.0
+    ],
+    "family_size": 3,
+    "family_wise_alpha": 0.05,
+    "holm_order_original_indices": [
+      0,
+      1,
+      2
+    ],
+    "members": [
+      "C1_D1_minus_BASE",
+      "C2_D1_minus_SAOCP_A_STAR",
+      "C3_D1_minus_C_STAR"
+    ],
+    "n_evaluable": 2,
+    "n_not_evaluable": 1,
+    "procedure": "Holm",
+    "rejected": [
+      true,
+      false,
+      false
+    ],
+    "thresholds": [
+      0.016666666666666666,
+      0.025,
+      0.05
+    ],
+    "unadjusted_p_for_holm": [
+      0.0023498825058747065,
+      0.03434828258587071,
+      1.0
+    ]
+  },
+  "records": [
+    {
+      "contrast_id": "C1_D1_minus_BASE",
+      "effect": 0.014384920634920603,
+      "holm_adjusted_pvalue": 0.00704964751762412,
+      "holm_rejected": true,
+      "iid_descriptive_ci": {
+        "ci_high": 0.027281746031746008,
+        "ci_low": 0.003968253968253954,
+        "n_draws": 20000,
+        "role": "descriptive_only",
+        "seed": 4327646553382733151
+      },
+      "n_differences": 12,
+      "p_for_holm": 0.0023498825058747065,
+      "paired_differences": [
+        0.0,
+        0.0357142857142857,
+        0.0,
+        0.005952380952380931,
+        0.0,
+        0.0714285714285714,
+        0.0,
+        0.017857142857142683,
+        0.0,
+        0.011904761904761751,
+        0.029761904761904767,
+        0.0
+      ],
+      "primary_ci_block2": {
+        "block_length": 2,
+        "ci_high": 0.024305555555555535,
+        "ci_low": 0.005952380952380931,
+        "n_draws": 20000,
+        "seed": 8716827251585873996
+      },
+      "primary_pvalue_block2": {
+        "block_length": 2,
+        "extreme_count": 46,
+        "n_draws": 20000,
+        "observed_mean": 0.014384920634920603,
+        "pvalue": 0.0023498825058747065,
+        "seed": 1288032748275697396
+      },
+      "seed_contract": {
+        "modes": [
+          "block2_ci",
+          "block3_ci_sensitivity",
+          "iid_descriptive",
+          "centered_null_pvalue_block2",
+          "centered_null_pvalue_block3_sensitivity"
+        ],
+        "scope": "confirm_h1_2026",
+        "seed_root": 20260715,
+        "seeds": {
+          "block2_ci": 14072494828625640601,
+          "block3_ci_sensitivity": 1026410942248057818,
+          "centered_null_pvalue_block2": 1943737479132232076,
+          "centered_null_pvalue_block3_sensitivity": 7166378932010793683,
+          "iid_descriptive": 14680031991610035537
+        }
+      },
+      "sensitivity_ci_block3": {
+        "block_length": 3,
+        "ci_high": 0.02281746031746028,
+        "ci_low": 0.007440476190476174,
+        "n_draws": 20000,
+        "seed": 7976874276576708305
+      },
+      "sensitivity_pvalue_block3": {
+        "block_length": 3,
+        "extreme_count": 6,
+        "n_draws": 20000,
+        "observed_mean": 0.014384920634920603,
+        "pvalue": 0.00034998250087495624,
+        "seed": 1017616237345078940
+      },
+      "status": "EVALUABLE"
+    },
+    {
+      "contrast_id": "C2_D1_minus_SAOCP_A_STAR",
+      "effect": 0.00099206349206347,
+      "holm_adjusted_pvalue": 0.06869656517174141,
+      "holm_rejected": false,
+      "iid_descriptive_ci": {
+        "ci_high": 0.002480158730158675,
+        "ci_low": 0.0,
+        "n_draws": 20000,
+        "role": "descriptive_only",
+        "seed": 21729225077463519
+      },
+      "n_differences": 12,
+      "p_for_holm": 0.03434828258587071,
+      "paired_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.00595238095238082,
+        0.0,
+        0.00595238095238082,
+        0.0,
+        0.0
+      ],
+      "primary_ci_block2": {
+        "block_length": 2,
+        "ci_high": 0.00198412698412694,
+        "ci_low": 0.0,
+        "n_draws": 20000,
+        "seed": 8774608490803213050
+      },
+      "primary_pvalue_block2": {
+        "block_length": 2,
+        "extreme_count": 686,
+        "n_draws": 20000,
+        "observed_mean": 0.00099206349206347,
+        "pvalue": 0.03434828258587071,
+        "seed": 628229571049913489
+      },
+      "seed_contract": {
+        "modes": [
+          "block2_ci",
+          "block3_ci_sensitivity",
+          "iid_descriptive",
+          "centered_null_pvalue_block2",
+          "centered_null_pvalue_block3_sensitivity"
+        ],
+        "scope": "confirm_h1_2026",
+        "seed_root": 20260715,
+        "seeds": {
+          "block2_ci": 1179006031248980950,
+          "block3_ci_sensitivity": 15515988363310052441,
+          "centered_null_pvalue_block2": 888366073740473520,
+          "centered_null_pvalue_block3_sensitivity": 7471233870756925688,
+          "iid_descriptive": 6082730738198523259
+        }
+      },
+      "sensitivity_ci_block3": {
+        "block_length": 3,
+        "ci_high": 0.002480158730158675,
+        "ci_low": 0.0,
+        "n_draws": 20000,
+        "seed": 8802143950459665122
+      },
+      "sensitivity_pvalue_block3": {
+        "block_length": 3,
+        "extreme_count": 1115,
+        "n_draws": 20000,
+        "observed_mean": 0.00099206349206347,
+        "pvalue": 0.05579721013949303,
+        "seed": 563172240094991079
+      },
+      "status": "EVALUABLE"
+    },
+    {
+      "contrast_id": "C3_D1_minus_C_STAR",
+      "effect": null,
+      "holm_adjusted_pvalue": 1.0,
+      "holm_rejected": false,
+      "iid_descriptive_ci": null,
+      "n_differences": 0,
+      "p_for_holm": 1.0,
+      "paired_differences": null,
+      "primary_ci_block2": null,
+      "primary_pvalue_block2": null,
+      "reason": "C_STAR_NOT_EVALUABLE_SLOT_RETAINED_IN_FAMILY",
+      "sensitivity_ci_block3": null,
+      "sensitivity_pvalue_block3": null,
+      "status": "NOT_EVALUABLE"
+    }
+  ]
+}

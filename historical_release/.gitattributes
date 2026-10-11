@@ -1,0 +1,3 @@
+# Preserve the byte identities recorded in the artifact and release manifests.
+# Source files are already stored with their intended line endings.
+* -text whitespace=cr-at-eol

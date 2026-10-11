@@ -1,0 +1,28 @@
+
+\begin{table}[!tbp]
+\centering
+\caption{Point-forecast performance of energy baselines on exposed NYISO.}
+\label{tab:point}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrr}
+\toprule
+Model & Macro MAE & Effect vs Ridge & Block-7 95\% CI & Holm $p$ \\
+\midrule
+Ridge lag-2 & 43.4423 & -- & -- & -- \\
+N-HiTS & 43.5444 & +0.1274 & [-0.4764, 0.7921] & 1.000 \\
+PatchTST & 43.6129 & +0.2015 & [-0.5258, 0.8966] & 1.000 \\
+DeepAR & 43.9913 & +0.5166 & [-0.0571, 1.1270] & 0.079 \\
+TFT & 44.3929 & +0.9822 & [0.1577, 2.0042] & 0.036 \\
+LightGBM & 45.8208 & -- & -- & -- \\
+ProLoaF & 45.9438 & +2.5293 & [1.2913, 3.6476] & 0.002 \\
+CatBoost & 47.3609 & -- & -- & -- \\
+P7 official & 58.4835 & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\par\footnotesize Effects are candidate-minus-Ridge paired daily MAE; negative values favor the candidate. Classical-model entries without a frozen direct Ridge contrast are left blank rather than assigned unpaired tests.
+\par\footnotesize Macro MAE summarizes seven point-evaluation origins. Deep models are
+development-selected P7-residual adaptations. DeepAR and four-model Holm
+families remain separate. Non-rejection establishes neither equivalence nor
+non-inferiority; point accuracy does not establish common-region service gains.
+\end{table}

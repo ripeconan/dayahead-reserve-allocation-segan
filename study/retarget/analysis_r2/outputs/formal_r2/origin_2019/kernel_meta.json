@@ -1,0 +1,21 @@
+{
+  "backend": "verified_wrapper_ast_kernel",
+  "git": {
+    "clean": true,
+    "dirty_entries": [],
+    "errors": [],
+    "git_head": "95790a9b9e4061166e6d7a8a13282e019b1a8663",
+    "git_tree": "77348e5fe7f2bb3ed5a031aaad9874b6a5ab2d7b",
+    "ok": true,
+    "repo_root": "/home/icdm/card10_external/online_conformal",
+    "return_codes": {
+      "head": 0,
+      "status": 0,
+      "tree": 0
+    }
+  },
+  "parity_claim": "none: new calendar-batched wrapper; no public runtime parity",
+  "repo": "/home/icdm/card10_external/online_conformal",
+  "wrapper_sha256": "3cede45f95ecad16ff9f77e8c830b5ac1d66fbc0b148bdce77f08d8409e47eef",
+  "wrapper_source": "scripts/card10_baselines/saocp_ast_kernel.py (vendored unchanged)"
+}

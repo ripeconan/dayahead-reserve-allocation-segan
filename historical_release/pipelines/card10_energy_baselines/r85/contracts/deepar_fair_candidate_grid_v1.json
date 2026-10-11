@@ -1,0 +1,71 @@
+{
+  "schema": "card10_r85_deepar_fair_candidate_grid_v1",
+  "frozen_before_2019_2025_evaluation": true,
+  "implementation": {
+    "package": "gluonts",
+    "version": "0.16.3",
+    "estimator": "gluonts.torch.model.deepar.DeepAREstimator",
+    "distribution_output": "student_t",
+    "global_related_univariate_series": 11,
+    "zone_static_identity": true
+  },
+  "information_set": {
+    "timezone": "America/New_York",
+    "feedback_lag_delivery_days": 2,
+    "prediction_length_hours": 49,
+    "target_day_selection": "select exact local delivery date from 49-hour UTC-continuous path",
+    "known_future_features": [
+      "p7_forecast_div_1000",
+      "local_hour_sin_cos",
+      "local_dayofweek_sin_cos",
+      "local_month_sin_cos",
+      "local_is_weekend"
+    ],
+    "forbidden": [
+      "day_t_minus_1_outcome",
+      "2019_2025_metrics_for_selection",
+      "2026_confirmatory_values",
+      "r77_d2_values"
+    ]
+  },
+  "development": {
+    "train_end_exclusive_local": "2018-07-01",
+    "validation_end_exclusive_local": "2018-10-01",
+    "selection_start_local": "2018-10-01",
+    "selection_end_local": "2018-12-31",
+    "selection_day_stride": 3,
+    "primary_loss": "mean_over_q_of_2_sum_pinball_q_div_sum_abs_actual",
+    "tie_break": ["mae", "parameter_count_proxy", "context_length", "candidate_id"]
+  },
+  "shared": {
+    "num_layers": 2,
+    "dropout_rate": 0.1,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "max_epochs": 50,
+    "early_stopping_patience": 5,
+    "lr_scheduler_patience": 5,
+    "num_batches_per_epoch": 100,
+    "num_samples": 100,
+    "seed": 85001,
+    "history_days_max": 400,
+    "scaling": true
+  },
+  "candidates": [
+    {"candidate_id": "level_c168_h40", "target_mode": "load_level", "context_length": 168, "hidden_size": 40},
+    {"candidate_id": "level_c168_h64", "target_mode": "load_level", "context_length": 168, "hidden_size": 64},
+    {"candidate_id": "level_c336_h40", "target_mode": "load_level", "context_length": 336, "hidden_size": 40},
+    {"candidate_id": "level_c336_h64", "target_mode": "load_level", "context_length": 336, "hidden_size": 64},
+    {"candidate_id": "resid_c168_h40", "target_mode": "p7_residual", "context_length": 168, "hidden_size": 40},
+    {"candidate_id": "resid_c168_h64", "target_mode": "p7_residual", "context_length": 168, "hidden_size": 64},
+    {"candidate_id": "resid_c336_h40", "target_mode": "p7_residual", "context_length": 336, "hidden_size": 40},
+    {"candidate_id": "resid_c336_h64", "target_mode": "p7_residual", "context_length": 336, "hidden_size": 64}
+  ],
+  "access_flags": {
+    "confirmatory_2026_outcome_accessed": false,
+    "confirmatory_2026_forecast_payload_accessed": false,
+    "reserved_confirmatory_path_accessed": false,
+    "r77_d2_values_accessed": false,
+    "sota_claimed": false
+  }
+}

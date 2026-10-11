@@ -1,0 +1,171 @@
+{
+  "T1_bank1_handcomputed": {
+    "all_pass": true,
+    "constant_tension_defer_then_flush": {
+      "expected_action_days": [
+        3,
+        11,
+        19
+      ],
+      "flags": {
+        "bank_open_at_trace_end": false,
+        "dropped_credit_on_observed_gap_total": 0
+      },
+      "got_action_days": [
+        3,
+        11,
+        19
+      ],
+      "pass": true
+    },
+    "increasing_tension_immediate": {
+      "expected_action_days": [
+        1,
+        5
+      ],
+      "got_action_days": [
+        1,
+        5
+      ],
+      "high_flags": [
+        true,
+        true
+      ],
+      "pass": true
+    },
+    "no_shadow_no_actions": {
+      "pass": true
+    },
+    "open_bank_at_trace_end_flagged": {
+      "got_action_days": [],
+      "pass": true
+    }
+  },
+  "T2_eligibility_invariance": {
+    "all_pass": true,
+    "checks": {
+      "synthetic_binding_F3": true,
+      "synthetic_binding_F4": true,
+      "synthetic_binding_P": true,
+      "synthetic_binding_actions_saturated": true
+    },
+    "origins": {
+      "2018->2019": {
+        "F3_pivot182": true,
+        "F3_pivot273": true,
+        "F3_pivot91": true,
+        "F4_pivot182": true,
+        "F4_pivot273": true,
+        "F4_pivot91": true,
+        "F5_pivot182": true,
+        "F5_pivot273": true,
+        "F5_pivot91": true,
+        "P_pivot182": true,
+        "P_pivot273": true,
+        "P_pivot91": true
+      },
+      "2019->2020": {
+        "F3_pivot183": true,
+        "F3_pivot274": true,
+        "F3_pivot91": true,
+        "F4_pivot183": true,
+        "F4_pivot274": true,
+        "F4_pivot91": true,
+        "F5_pivot183": true,
+        "F5_pivot274": true,
+        "F5_pivot91": true,
+        "P_pivot183": true,
+        "P_pivot274": true,
+        "P_pivot91": true
+      },
+      "2020->2021": {
+        "F3_pivot175": true,
+        "F3_pivot263": true,
+        "F3_pivot87": true,
+        "F4_pivot175": true,
+        "F4_pivot263": true,
+        "F4_pivot87": true,
+        "F5_pivot175": true,
+        "F5_pivot263": true,
+        "F5_pivot87": true,
+        "P_pivot175": true,
+        "P_pivot263": true,
+        "P_pivot87": true
+      }
+    }
+  },
+  "T3_segment_relabel": {
+    "all_pass": true,
+    "checks": {
+      "F1": true,
+      "F2": true,
+      "F3": true,
+      "F4": true,
+      "P": true
+    }
+  },
+  "T4_cap_accounting": {
+    "all_pass": true,
+    "cap": 55,
+    "checks": {
+      "pace7_cap_semantics": true,
+      "pace7_zero_cap_no_actions": true,
+      "pacebank_accounting": true,
+      "pacebank_uses_at_most_cap": true
+    },
+    "pace7_scheduled": 52,
+    "pace7_skipped": 0,
+    "pacebank_dropped_credit_units": 0
+  },
+  "T5_determinism": {
+    "all_pass": true,
+    "checks": {
+      "pacebank_deterministic": true,
+      "production_deterministic": true
+    }
+  },
+  "T6_reverse_replay": {
+    "all_pass": true,
+    "identity_note": "NYISO production checked against the R39 stored action column; transfer production checked against the p0_2 continuous production rows, and K2 against the p0_2/R51 thresholded-count rows (R51's original 'drb_action' label carries the K2 rule).",
+    "k2_mismatches": [],
+    "n_origins": 30,
+    "production_mismatches": []
+  },
+  "T7_oracle_toy_enumeration": {
+    "all_pass": true,
+    "checks": {
+      "canonical_hash_deterministic": true,
+      "conflict_rescue_matches_enumeration": true,
+      "conflict_z_equals_6_over_7": true,
+      "conflict_z_matches_enumeration": true,
+      "rescue_optimum_alone_differs": true,
+      "rounded_actions_valid": true,
+      "windows_retained_complete": true
+    },
+    "enumerated_best_rescue_any": 1.0,
+    "enumerated_best_z": 0.8571428571428571,
+    "enumerated_rescue_at_best_z": 0.6,
+    "errata": "previous T7 toy (three actions covering three deficient days) was vacuous per reviewer note 1",
+    "solver_rescue": 0.6,
+    "solver_z": 0.8571428571428571
+  },
+  "T8_fine_grid_crossings": {
+    "all_pass": true,
+    "checks": {
+      "crossing_in_grid_flag": true,
+      "crossing_value": true,
+      "equal_rate_reported_explicitly": true,
+      "fine_grid_defined": true,
+      "negative_crossing_handled": true
+    }
+  },
+  "T9_support_checks": {
+    "all_pass": true,
+    "checks": {
+      "duplicates_detected": true,
+      "missing_extra_detected": true
+    }
+  },
+  "all_pass": true,
+  "note_f5_mirror": "strict runtime mirror against confirm_runner.cocd_known_horizon_cap_registered not executed: importing that module loads a project-wide import graph at module level (side-effect risk); transcription verified instead by T1 hand-computed cases and line-level source comparison recorded in the R1 protocol."
+}

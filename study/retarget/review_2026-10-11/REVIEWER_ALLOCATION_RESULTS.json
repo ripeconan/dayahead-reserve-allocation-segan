@@ -1,0 +1,206 @@
+{
+  "n_origin_units": 30,
+  "cohort_counts": {
+    "caiso_dev_replay": 12,
+    "caiso_postsplit_replay": 6,
+    "gefcom_replay": 5,
+    "nyiso_exposed": 7
+  },
+  "duplicate_identities": false,
+  "failures": [],
+  "all_pass": true,
+  "macro": [
+    {
+      "cohort": "caiso_dev_replay",
+      "policy": "F1",
+      "service_worst7": 0.6785714285714285,
+      "mean_service": 0.9213143299733432,
+      "action_total": 12.75,
+      "action_rate": 0.13994948085079986
+    },
+    {
+      "cohort": "caiso_dev_replay",
+      "policy": "F2",
+      "service_worst7": 0.6666666666666666,
+      "mean_service": 0.9222615056151939,
+      "action_total": 12.916666666666666,
+      "action_rate": 0.14181173636474076
+    },
+    {
+      "cohort": "caiso_dev_replay",
+      "policy": "F3",
+      "service_worst7": 0.6904761904761906,
+      "mean_service": 0.9139675227791985,
+      "action_total": 8.833333333333334,
+      "action_rate": 0.09700292266853087
+    },
+    {
+      "cohort": "caiso_dev_replay",
+      "policy": "F4",
+      "service_worst7": 0.6904761904761906,
+      "mean_service": 0.9130311931911835,
+      "action_total": 7.833333333333333,
+      "action_rate": 0.08605305589306567
+    },
+    {
+      "cohort": "caiso_dev_replay",
+      "policy": "F5",
+      "service_worst7": 0.6666666666666666,
+      "mean_service": 0.9130212393768818,
+      "action_total": 13.833333333333334,
+      "action_rate": 0.15185602723463007
+    },
+    {
+      "cohort": "caiso_dev_replay",
+      "policy": "P",
+      "service_worst7": 0.6666666666666666,
+      "mean_service": 0.9121154422754324,
+      "action_total": 13.833333333333334,
+      "action_rate": 0.15185602723463007
+    },
+    {
+      "cohort": "caiso_postsplit_replay",
+      "policy": "F1",
+      "service_worst7": 0.6190476190476191,
+      "mean_service": 0.9079600988492048,
+      "action_total": 12.666666666666666,
+      "action_rate": 0.13966431711912905
+    },
+    {
+      "cohort": "caiso_postsplit_replay",
+      "policy": "F2",
+      "service_worst7": 0.5714285714285714,
+      "mean_service": 0.9007349717535355,
+      "action_total": 12.666666666666666,
+      "action_rate": 0.13966431711912905
+    },
+    {
+      "cohort": "caiso_postsplit_replay",
+      "policy": "F3",
+      "service_worst7": 0.6428571428571429,
+      "mean_service": 0.8989446272665619,
+      "action_total": 10.166666666666666,
+      "action_rate": 0.11211081704486688
+    },
+    {
+      "cohort": "caiso_postsplit_replay",
+      "policy": "F4",
+      "service_worst7": 0.5952380952380952,
+      "mean_service": 0.8933877147116034,
+      "action_total": 9.333333333333334,
+      "action_rate": 0.102949281625393
+    },
+    {
+      "cohort": "caiso_postsplit_replay",
+      "policy": "F5",
+      "service_worst7": 0.5714285714285714,
+      "mean_service": 0.9007150641249323,
+      "action_total": 13.666666666666666,
+      "action_rate": 0.15069582753998975
+    },
+    {
+      "cohort": "caiso_postsplit_replay",
+      "policy": "P",
+      "service_worst7": 0.5714285714285714,
+      "mean_service": 0.8970918757191351,
+      "action_total": 13.666666666666666,
+      "action_rate": 0.15069582753998975
+    },
+    {
+      "cohort": "gefcom_replay",
+      "policy": "F1",
+      "service_worst7": 0.5714285714285714,
+      "mean_service": 0.9124414715719065,
+      "action_total": 12.8,
+      "action_rate": 0.1400207039337474
+    },
+    {
+      "cohort": "gefcom_replay",
+      "policy": "F2",
+      "service_worst7": 0.6,
+      "mean_service": 0.9102436693741043,
+      "action_total": 13.0,
+      "action_rate": 0.14224292615596962
+    },
+    {
+      "cohort": "gefcom_replay",
+      "policy": "F3",
+      "service_worst7": 0.6571428571428571,
+      "mean_service": 0.907973668843234,
+      "action_total": 11.2,
+      "action_rate": 0.12260497956150132
+    },
+    {
+      "cohort": "gefcom_replay",
+      "policy": "F4",
+      "service_worst7": 0.6571428571428571,
+      "mean_service": 0.9036258427562774,
+      "action_total": 8.8,
+      "action_rate": 0.09637415724372246
+    },
+    {
+      "cohort": "gefcom_replay",
+      "policy": "F5",
+      "service_worst7": 0.6,
+      "mean_service": 0.9124175824175824,
+      "action_total": 14.0,
+      "action_rate": 0.15318468970642884
+    },
+    {
+      "cohort": "gefcom_replay",
+      "policy": "P",
+      "service_worst7": 0.5714285714285714,
+      "mean_service": 0.9058475341084037,
+      "action_total": 14.0,
+      "action_rate": 0.15318468970642884
+    },
+    {
+      "cohort": "nyiso_exposed",
+      "policy": "F1",
+      "service_worst7": 0.6904761904761905,
+      "mean_service": 0.9221646947419656,
+      "action_total": 51.57142857142857,
+      "action_rate": 0.14194530839489294
+    },
+    {
+      "cohort": "nyiso_exposed",
+      "policy": "F2",
+      "service_worst7": 0.6828231292517007,
+      "mean_service": 0.9227156739501178,
+      "action_total": 53.714285714285715,
+      "action_rate": 0.14785870532558157
+    },
+    {
+      "cohort": "nyiso_exposed",
+      "policy": "F3",
+      "service_worst7": 0.6394557823129252,
+      "mean_service": 0.9205802454538431,
+      "action_total": 54.714285714285715,
+      "action_rate": 0.15061190358742568
+    },
+    {
+      "cohort": "nyiso_exposed",
+      "policy": "F4",
+      "service_worst7": 0.6700680272108842,
+      "mean_service": 0.9109636724839536,
+      "action_total": 9.428571428571429,
+      "action_rate": 0.025938411049572063
+    },
+    {
+      "cohort": "nyiso_exposed",
+      "policy": "F5",
+      "service_worst7": 0.7023809523809523,
+      "mean_service": 0.9168133634466769,
+      "action_total": 40.0,
+      "action_rate": 0.11011445823931788
+    },
+    {
+      "cohort": "nyiso_exposed",
+      "policy": "P",
+      "service_worst7": 0.7304421768707483,
+      "mean_service": 0.9180881177863313,
+      "action_total": 40.0,
+      "action_rate": 0.11011445823931788
+    }
+  ]
+}

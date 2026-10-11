@@ -1,0 +1,158 @@
+{
+  "fingerprint": "f57dd58e6f1b7be8ade8a78e707fdb00a468561cb0a9eab3c70bfa2382ed3d8f",
+  "finished": "2026-10-11T09:31:23",
+  "n_jobs": 30,
+  "n_skip": 1,
+  "started": "2026-10-11T09:30:59",
+  "timing": [
+    {
+      "origin": "2018->2019",
+      "status": "SKIP"
+    },
+    {
+      "origin": "2019->2020",
+      "seconds": 3.235,
+      "status": "RUN"
+    },
+    {
+      "origin": "2020->2021",
+      "seconds": 1.874,
+      "status": "RUN"
+    },
+    {
+      "origin": "2021->2022",
+      "seconds": 2.765,
+      "status": "RUN"
+    },
+    {
+      "origin": "2022->2023",
+      "seconds": 2.97,
+      "status": "RUN"
+    },
+    {
+      "origin": "2023->2024",
+      "seconds": 2.951,
+      "status": "RUN"
+    },
+    {
+      "origin": "2024->2025",
+      "seconds": 2.677,
+      "status": "RUN"
+    },
+    {
+      "origin": "2010Q4",
+      "seconds": 0.219,
+      "status": "RUN"
+    },
+    {
+      "origin": "2011Q1",
+      "seconds": 0.208,
+      "status": "RUN"
+    },
+    {
+      "origin": "2011Q2",
+      "seconds": 0.221,
+      "status": "RUN"
+    },
+    {
+      "origin": "2011Q3",
+      "seconds": 0.217,
+      "status": "RUN"
+    },
+    {
+      "origin": "2011Q4",
+      "seconds": 0.222,
+      "status": "RUN"
+    },
+    {
+      "origin": "2019Q1",
+      "seconds": 0.156,
+      "status": "RUN"
+    },
+    {
+      "origin": "2019Q2",
+      "seconds": 0.212,
+      "status": "RUN"
+    },
+    {
+      "origin": "2019Q3",
+      "seconds": 0.221,
+      "status": "RUN"
+    },
+    {
+      "origin": "2019Q4",
+      "seconds": 0.223,
+      "status": "RUN"
+    },
+    {
+      "origin": "2020Q1",
+      "seconds": 0.157,
+      "status": "RUN"
+    },
+    {
+      "origin": "2020Q2",
+      "seconds": 0.222,
+      "status": "RUN"
+    },
+    {
+      "origin": "2020Q3",
+      "seconds": 0.22,
+      "status": "RUN"
+    },
+    {
+      "origin": "2020Q4",
+      "seconds": 0.225,
+      "status": "RUN"
+    },
+    {
+      "origin": "2021Q1",
+      "seconds": 0.164,
+      "status": "RUN"
+    },
+    {
+      "origin": "2021Q2",
+      "seconds": 0.227,
+      "status": "RUN"
+    },
+    {
+      "origin": "2021Q3",
+      "seconds": 0.227,
+      "status": "RUN"
+    },
+    {
+      "origin": "2021Q4",
+      "seconds": 0.221,
+      "status": "RUN"
+    },
+    {
+      "origin": "2022Q1",
+      "seconds": 0.211,
+      "status": "RUN"
+    },
+    {
+      "origin": "2022Q2",
+      "seconds": 0.232,
+      "status": "RUN"
+    },
+    {
+      "origin": "2022Q3",
+      "seconds": 0.224,
+      "status": "RUN"
+    },
+    {
+      "origin": "2022Q4",
+      "seconds": 0.233,
+      "status": "RUN"
+    },
+    {
+      "origin": "2023Q1",
+      "seconds": 0.164,
+      "status": "RUN"
+    },
+    {
+      "origin": "2023Q2",
+      "seconds": 0.251,
+      "status": "RUN"
+    }
+  ]
+}

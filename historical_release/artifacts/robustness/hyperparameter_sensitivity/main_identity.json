@@ -1,0 +1,89 @@
+{
+  "all_seven_origins_pass": true,
+  "origins": [
+    {
+      "action": true,
+      "actions": 38,
+      "cap": true,
+      "n_days": 365,
+      "origin": "2018->2019",
+      "revealed_shortfall": true,
+      "service": true,
+      "state": true,
+      "used_after": true,
+      "used_before": true
+    },
+    {
+      "action": true,
+      "actions": 23,
+      "cap": true,
+      "n_days": 366,
+      "origin": "2019->2020",
+      "revealed_shortfall": true,
+      "service": true,
+      "state": true,
+      "used_after": true,
+      "used_before": true
+    },
+    {
+      "action": true,
+      "actions": 39,
+      "cap": true,
+      "n_days": 351,
+      "origin": "2020->2021",
+      "revealed_shortfall": true,
+      "service": true,
+      "state": true,
+      "used_after": true,
+      "used_before": true
+    },
+    {
+      "action": true,
+      "actions": 50,
+      "cap": true,
+      "n_days": 365,
+      "origin": "2021->2022",
+      "revealed_shortfall": true,
+      "service": true,
+      "state": true,
+      "used_after": true,
+      "used_before": true
+    },
+    {
+      "action": true,
+      "actions": 52,
+      "cap": true,
+      "n_days": 365,
+      "origin": "2022->2023",
+      "revealed_shortfall": true,
+      "service": true,
+      "state": true,
+      "used_after": true,
+      "used_before": true
+    },
+    {
+      "action": true,
+      "actions": 55,
+      "cap": true,
+      "n_days": 366,
+      "origin": "2023->2024",
+      "revealed_shortfall": true,
+      "service": true,
+      "state": true,
+      "used_after": true,
+      "used_before": true
+    },
+    {
+      "action": true,
+      "actions": 23,
+      "cap": true,
+      "n_days": 365,
+      "origin": "2024->2025",
+      "revealed_shortfall": true,
+      "service": true,
+      "state": true,
+      "used_after": true,
+      "used_before": true
+    }
+  ]
+}

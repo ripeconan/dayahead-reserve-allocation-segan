@@ -1,0 +1,23 @@
+\begin{table}[!tbp]
+\centering
+\caption{Normalized annual cost $J/c_D=\kappa\,(\text{base}+\text{extra booked})+\text{uncovered}$ in MWh-equivalent units at $\eta=1$, over the complete declared price grid. $\kappa=c_R/c_D$ is the capacity price per MW$\cdot$h relative to the uncovered-energy price per MWh.}
+\label{tab:r2-cost}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+$\kappa$ & none & P (production) & $P-$none \\
+\midrule
+0 & 1,305 & 967 & -338 \\
+0.001 & 29,856 & 30,641 & +785 \\
+0.005 & 144,060 & 149,339 & +5,280 \\
+0.01 & 286,814 & 297,712 & +10,898 \\
+0.025 & 715,077 & 742,829 & +27,752 \\
+0.05 & 1,428,848 & 1,484,690 & +55,842 \\
+0.1 & 2,856,391 & 2,968,414 & +112,023 \\
+0.25 & 7,139,020 & 7,419,584 & +280,564 \\
+0.5 & 14,276,734 & 14,838,201 & +561,467 \\
+\bottomrule
+\end{tabular}
+\par\footnotesize The crossing $\kappa^\star$ that equates the two policies solves $\kappa^\star=\Delta\text{uncovered}/\Delta\text{booked}$: $0.0004245663$ at $\eta=0.5$, $0.0003011944$ at $\eta=1$ and $0.0001636909$ at $\eta=2$. It is a post-run algebraic diagnostic of the fixed cost model, not a newly selected grid cell: every declared positive price in the grid above favors the no-extra-commitment comparator in this normalized objective.
+\end{table}

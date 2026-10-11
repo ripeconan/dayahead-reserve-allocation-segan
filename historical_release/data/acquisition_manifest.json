@@ -1,0 +1,98 @@
+{
+  "schema": "energy-uq-data-acquisition-v1",
+  "verified_on": "2026-07-21",
+  "redistribution_policy": "Third-party source data are not included in this repository.",
+  "sources": {
+    "nyiso_zonal_2017_2025": {
+      "role": "primary eleven-zone day-ahead load forecast and actual load",
+      "provider": "New York Independent System Operator",
+      "source_class": "official_dynamic_archive",
+      "official_forecast_index": "https://mis.nyiso.com/public/P-7list.htm",
+      "official_actual_index": "https://mis.nyiso.com/public/P-58Blist.htm",
+      "forecast_archive_template": "https://mis.nyiso.com/public/csv/isolf/{YYYYMM}01isolf_csv.zip",
+      "actual_archive_template": "https://mis.nyiso.com/public/csv/pal/{YYYYMM}01pal_csv.zip",
+      "period": {"start": "2017-01", "end": "2025-12"},
+      "expected_archives": 216,
+      "acquisition_command": "python scripts/acquire_nyiso.py --start-year 2017 --end-year 2025",
+      "prepared_artifact": {
+        "path": "data/raw/nyiso/nyiso_zonal_2017_2025.csv.gz",
+        "rows": 78144,
+        "bytes": 7093132,
+        "sha256": "d9e492532e22bc3f41c6967acf99cc5b49a49ae2e5ba3ae3b7dbc8092d9e5d0d",
+        "uncompressed_bytes": 20950959,
+        "uncompressed_sha256": "f98b68501b433cf878394a2fba10df295c12a46805c762d9a2fc4c74e99a78c4"
+      },
+      "license_note": "NYISO provider terms apply; the source archives are not redistributed."
+    },
+    "gefcom2014_load": {
+      "role": "secondary 24-hour load-profile benchmark",
+      "provider": "Global Energy Forecasting Competition 2014 organizers",
+      "source_class": "competition_organizer_mirror",
+      "landing_page": "https://blog.drhongtao.com/2017/03/gefcom2014-load-forecasting-data.html",
+      "publication_doi": "10.1016/j.ijforecast.2016.02.001",
+      "download_url": "https://www.dropbox.com/scl/fi/zwnlfwhds3k2xz0/GEFCom2014.zip?rlkey=oz7unehbwtglp1pbgbnb4wne2&dl=1",
+      "source_archive": {
+        "name": "GEFCom2014.zip",
+        "bytes": 126360077,
+        "sha256": "d68d957270edd93b26a37d0f9b5e901f942abdf34c75eacbe14e417beb16e154"
+      },
+      "load_track_archive": {
+        "member": "GEFCom2014 Data/GEFCom2014-L_V2.zip",
+        "bytes": 2599214,
+        "sha256": "40e7cf2f2eeef2520836fb3acb813534b6c783ce3df1afe876297bc808eb2b91"
+      },
+      "acquisition_command": "python scripts/acquire_static_data.py --dataset gefcom2014",
+      "preparation_command": "python scripts/prepare_gefcom2014.py --root data/downloads/gefcom2014/Load",
+      "prepared_artifact": {
+        "path": "data/processed/gefcom2014/gefcom2014_load_daily24.csv.gz",
+        "rows": 2191,
+        "bytes": 210158,
+        "sha256": "92a96bf57cfb81c4f6a029f068bbbd2d26c199aeeb74546c75fd26bfcef51333",
+        "uncompressed_bytes": 714687,
+        "uncompressed_sha256": "d6c59021109862119718478e3c82f911650680291114a1373fe346b38fafb203"
+      },
+      "license_note": "No redistribution license is asserted by this package; obtain the archive from the organizer-provided source."
+    },
+    "caiso_zenodo_15034924": {
+      "role": "processed CAISO hourly forecast and actual-load benchmark",
+      "provider": "Zenodo record 15034924",
+      "source_class": "official_versioned_repository",
+      "record_url": "https://zenodo.org/records/15034924",
+      "doi": "10.5281/zenodo.15034924",
+      "download_url": "https://zenodo.org/records/15034924/files/CAISO_Research_Data.csv?download=1",
+      "source_artifact": {
+        "name": "CAISO_Research_Data.csv",
+        "bytes": 4349410,
+        "md5_reported_by_zenodo": "c63c396c205162b697050c87e173bd50",
+        "sha256": "5be016828c73f7f7cbda854d17897970dfb2b22b3b8708a419744d384d6950df"
+      },
+      "local_path": "data/raw/caiso/caiso_zenodo_raw_2017_2023.csv",
+      "acquisition_command": "python scripts/acquire_static_data.py --dataset caiso",
+      "license": "CC-BY-4.0",
+      "identity_note": "Processed benchmark; native OASIS field equivalence is not claimed."
+    },
+    "noaa_gefs_2019_2022": {
+      "role": "forecast-form two-metre temperature and relative-humidity covariates",
+      "provider": "NOAA Global Ensemble Forecast System via NOAA Open Data Dissemination",
+      "source_class": "official_public_object_store",
+      "registry_url": "https://registry.opendata.aws/noaa-gefs/",
+      "bucket": "s3://noaa-gefs-pds/",
+      "https_base": "https://noaa-gefs-pds.s3.amazonaws.com/",
+      "period": {"start": "2019-01-01", "end": "2022-12-31"},
+      "cycle": "00Z",
+      "d2_leads_hours": [54, 60, 66, 72],
+      "paired_d1_leads_hours": [30, 36, 42, 48],
+      "variables": ["two_meter_temperature", "two_meter_relative_humidity"],
+      "expected_cells": 59720,
+      "fetched_cells": 59712,
+      "structurally_missing_cells": 8,
+      "structurally_missing_delivery_days": ["2020-09-24"],
+      "retrieved_bytes": 8308755639,
+      "cell_ledger_sha256": "ef406b6c25b9c1f19b34689c468ffce0990874f7435b974c2586dc0f28bcb216",
+      "raw_payload_tree_sha256": "62e948596d6860326713aa5e79b050de06ff8a645bcbdc7438cd81db99dcd237",
+      "raw_payload_tree_rule": "sha256(sorted(raw_relpath\\0block_sha256\\0retrieved_bytes\\n))",
+      "acquisition_code": "pipelines/energy_covariates/gefs/acquire.py",
+      "license_note": "NOAA NODD data are open to the public; NOAA requests attribution and prohibits implied endorsement."
+    }
+  }
+}

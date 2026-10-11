@@ -1,0 +1,167 @@
+{
+  "affinity": {
+    "applied": true,
+    "cpus_after": [
+      1,
+      2
+    ],
+    "cpus_before": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "thread_env": {
+      "MKL_NUM_THREADS": "2",
+      "OMP_NUM_THREADS": "2",
+      "OPENBLAS_NUM_THREADS": "2"
+    }
+  },
+  "cap": 55,
+  "drb_worst7": 0.7142857142857142,
+  "fingerprint": "b6e692f7a5e724ba4c444301ac2bb1b37f46da38f79e8c53726cbf07e7bd7cd1",
+  "mixed_headroom_cap_minus_drb": 0.2142857142857144,
+  "n_days": 366,
+  "oracle_cap": {
+    "action_total": 55,
+    "diagnostics": [
+      {
+        "fun": -0.9285714285714287,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_dual_bound": -0.9285714285714287,
+        "mip_gap": 0.0,
+        "mip_node_count": 2951,
+        "seconds": 12.801,
+        "stage": "max_min_w7",
+        "status": 0
+      },
+      {
+        "fun": -16.666666666666668,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_dual_bound": -16.666666666666668,
+        "mip_gap": 2.131628207280301e-16,
+        "mip_node_count": 1,
+        "seconds": 0.093,
+        "stage": "max_rescue_at_z1",
+        "status": 0
+      },
+      {
+        "fun": 24.3224043715847,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_dual_bound": 24.3224043715847,
+        "mip_gap": 0.0,
+        "mip_node_count": 1,
+        "seconds": 0.187,
+        "stage": "early_action_tiebreak",
+        "status": 0
+      }
+    ],
+    "level": 55,
+    "mean_service": 0.9650637522768671,
+    "mode": "cap",
+    "rescued_shortfall_sum": 16.666666666666668,
+    "stage2_rescue_optimum": 16.666666666666664,
+    "validation": {
+      "all_windows_valid": true,
+      "count_equals_level": true,
+      "level_ok": true,
+      "mean_service": 0.9650637522768671,
+      "min_window_mean": 0.9285714285714286,
+      "n_actions": 55,
+      "rescue_ge_stage2_minus_tol": true,
+      "rescued_shortfall_sum": 16.666666666666668,
+      "valid": true,
+      "within_cap": true,
+      "worst7": 0.9285714285714286,
+      "worst7_ge_z1_minus_tol": true,
+      "z1": 0.9285714285714287
+    },
+    "worst7": 0.9285714285714286,
+    "z1": 0.9285714285714287
+  },
+  "oracle_count": {
+    "action_total": 23,
+    "diagnostics": [
+      {
+        "fun": -0.8928571428571429,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_dual_bound": -0.8928571428571429,
+        "mip_gap": 0.0,
+        "mip_node_count": 102,
+        "seconds": 0.754,
+        "stage": "max_min_w7",
+        "status": 0
+      },
+      {
+        "fun": -9.25,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_dual_bound": -9.25,
+        "mip_gap": 0.0,
+        "mip_node_count": 1,
+        "seconds": 0.057,
+        "stage": "max_rescue_at_z1",
+        "status": 0
+      },
+      {
+        "fun": 10.46174863387978,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_dual_bound": 10.46174863387978,
+        "mip_gap": 0.0,
+        "mip_node_count": 1,
+        "seconds": 0.266,
+        "stage": "early_action_tiebreak",
+        "status": 0
+      }
+    ],
+    "level": 23,
+    "mean_service": 0.9447996357012751,
+    "mode": "count",
+    "rescued_shortfall_sum": 9.25,
+    "stage2_rescue_optimum": 9.25,
+    "validation": {
+      "all_windows_valid": true,
+      "count_equals_level": true,
+      "level_ok": true,
+      "mean_service": 0.9447996357012751,
+      "min_window_mean": 0.8928571428571427,
+      "n_actions": 23,
+      "rescue_ge_stage2_minus_tol": true,
+      "rescued_shortfall_sum": 9.25,
+      "valid": true,
+      "within_cap": null,
+      "worst7": 0.8928571428571427,
+      "worst7_ge_z1_minus_tol": true,
+      "z1": 0.8928571428571429
+    },
+    "worst7": 0.8928571428571427,
+    "z1": 0.8928571428571429
+  },
+  "origin": "2019->2020",
+  "origin_index": 1,
+  "output_sha256": "feea5bcde609a3e2cb9b30b47f9bca9ac33a3968108144b506e21d7f89999cc4",
+  "production_count": 23,
+  "quota_headroom_cap_minus_count": 0.03571428571428592,
+  "r43_headroom_check": {
+    "admitted": 0.178571,
+    "got": 0.1785714285714285,
+    "within_1e-6": true
+  },
+  "schema": "card10.segan_r1.oracle_unit.v2",
+  "seconds": 15.527,
+  "status": "PASS",
+  "unlimited_cap": {
+    "action_total": 23,
+    "blocked_triggers_removed": 0,
+    "delta_worst7_vs_capped": 0.0,
+    "interpretation": "mechanical closed-loop sensitivity; NOT a causal budget component",
+    "worst7": 0.7142857142857142
+  }
+}

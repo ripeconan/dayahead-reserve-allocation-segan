@@ -1,0 +1,4 @@
+contrast,status,effect,n_blocks,n_nonzero,block2_ci_lo,block2_ci_hi,block2_raw_p,block2_holm_p,block2_holm_rejected,block3_ci_lo,block3_ci_hi,block3_raw_p,signflip_assignments,signflip_extreme,signflip_raw_p,block3_holm_p,block3_holm_rejected,signflip_holm_p,signflip_holm_rejected,signflip_role
+C1_D1_minus_BASE,EVALUABLE,0.0143849206349206,12,6,0.00595238095238093,0.0243055555555555,0.00234988250587471,0.00704964751762412,True,0.00744047619047617,0.0228174603174603,0.000349982500874956,64,2,0.03125,0.00104994750262487,True,0.09375,False,post_release_assumption_shifted_stress_only
+C2_D1_minus_SAOCP_A_STAR,EVALUABLE,0.00099206349206347,12,2,0,0.00198412698412694,0.0343482825858707,0.0686965651717414,False,0,0.00248015873015867,0.055797210139493,4,2,0.5,0.111594420278986,False,1,False,post_release_assumption_shifted_stress_only
+C3_D1_minus_C_STAR,NOT_EVALUABLE,,0,0,,,1,1,False,,,1,0,0,1,1,False,1,False,post_release_assumption_shifted_stress_only

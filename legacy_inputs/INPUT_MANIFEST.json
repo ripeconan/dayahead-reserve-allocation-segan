@@ -1,0 +1,72 @@
+[
+  {
+    "path": "reports/experiment_outputs/card10_p0_4_nyiso_verified_saocp_r39_2026-07-16/daily_policy_trace.csv.gz",
+    "sha256": "c12f16f655a11d91ba26b1b942018c592d275a3cb941a4a2f2e35aedc4ed3ca5",
+    "bytes": 40068
+  },
+  {
+    "path": "reports/experiment_outputs/card10_p0_4_nyiso_verified_saocp_r39_2026-07-16/selected_hourly_results.csv.gz",
+    "sha256": "f66f795a0f9aa779262d46f9c54c90bcdf7e661a853eeb19383a4fc0f699e9b4",
+    "bytes": 16122132
+  },
+  {
+    "path": "reports/experiment_outputs/card10_nyiso_saocp_drb_current_r02_2026-07-15/policy_daily_trace.csv.gz",
+    "sha256": "4ee214335ae62351b9e9875a91afcc30d5f930df2013bbc10b949db44276f958",
+    "bytes": 4887916
+  },
+  {
+    "path": "reports/experiment_outputs/card10_nyiso_saocp_drb_current_r02_2026-07-15/saocp_hourly_base.csv.gz",
+    "sha256": "ce2ce87e57fb7d6e05b319022b35c67c736706172ecb6658eecc2e483744135c",
+    "bytes": 2234598
+  },
+  {
+    "path": "reports/experiment_outputs/card10_nyiso_saocp_drb_current_r02_2026-07-15/random_draw_endpoints.csv.gz",
+    "sha256": "530dbe426aafc95416f965c7e45647accf68e1acdeca74ae21b26acd3599b723",
+    "bytes": 99424
+  },
+  {
+    "path": "reports/experiment_outputs/card10_p0_3_p0_4_cross_dataset_transfer_r51_2026-07-17/daily_trace.csv.gz",
+    "sha256": "3e84b66dd2fff4a57151d5f67b21516043642c3acb3221bdda175bcfe4f88e42",
+    "bytes": 318485
+  },
+  {
+    "path": "reports/experiment_outputs/card10_mr_p0_2_production_transfer_2026-07-22/daily_trace.csv.gz",
+    "sha256": "d50a106b2511da0747b5b3e7e96fd52761df7a91c6bc0124e7092c6251dc2b0a",
+    "bytes": 44171
+  },
+  {
+    "path": "reports/experiment_outputs/card10_mr_p0_2_production_transfer_2026-07-22/aggregate_results.csv.gz",
+    "sha256": "8498143f30f81a8fc814eebaf5570f3153abdfb2ccf078b02f1f4393eeaece9e",
+    "bytes": 2016
+  },
+  {
+    "path": "reports/experiment_outputs/card10_p0_3_cocd_r45_2026-07-16/cocd_daily_ledger.csv.gz",
+    "sha256": "edc3b6714c2961f71f15affd6efaa6e327c4037aa9c861b5c0c0aafcc8f86566",
+    "bytes": 78475
+  },
+  {
+    "path": "reports/experiment_outputs/card10_p0_3_cocd_r45_2026-07-16/aggregate_results.csv.gz",
+    "sha256": "40a8a6c30f8abb7b9303232703c93d110da6e43014fd21f0e66b07a1becd957d",
+    "bytes": 959
+  },
+  {
+    "path": "reports/experiment_outputs/card10_p0_3_cocd_r45_2026-07-16/random_draw_metrics.csv.gz",
+    "sha256": "333e035d185423a90074aa7b408b89e4f48f50d1267b2e22b392609b195050bb",
+    "bytes": 352547
+  },
+  {
+    "path": "reports/experiment_outputs/card10_p0_3_exact_oracle_exchange_r43_2026-07-16/aggregate_results.csv.gz",
+    "sha256": "36e04946bb4f2714351a32cf87dd4e893b8630e351939ea8b8eed09f47d92f89",
+    "bytes": 749
+  },
+  {
+    "path": "reports/experiment_outputs/card10_p0_3_exact_oracle_exchange_r43_2026-07-16/oracle_exchange_daily_trace.csv.gz",
+    "sha256": "becc34f45ca32ecbfc5ebfd3f9a299162271376a2dadb0b3180464b82bc1ca61",
+    "bytes": 43728
+  },
+  {
+    "path": "reports/experiment_outputs/card10_p0_3_exact_oracle_exchange_r43_2026-07-16/solver_diagnostics.csv.gz",
+    "sha256": "9d92861ef8477941e6588fac50f1843542e375cb82811a2127e5b555f096b772",
+    "bytes": 281
+  }
+]

@@ -1,0 +1,54 @@
+
+\begin{table}[!t]
+\centering
+\caption{Region-only coverage, worst-window service, and volume
+across exposed cohorts and retrospective matching views.}
+\label{tab:stratified}
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\renewcommand{\arraystretch}{0.80}
+\begin{tabular}{llrrr|rr|rr}
+\toprule
+& & \multicolumn{3}{c}{Raw common shell} & \multicolumn{2}{c}{Coverage matched} & \multicolumn{2}{c}{Static-volume matched} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+Cohort & Method & Cov. & $W_7$ & Mean vol. & $W_7$ & Mean vol. & Cov. & $W_7$ \\
+\midrule
+NYISO & Static & 0.873 & 0.287 & 1.14 & 0.325 & 2.75 & 0.873 & 0.287 \\
+ & Rolling & 0.875 & 0.293 & 7.94 & 0.350 & 15.6 & 0.766 & 0.156 \\
+ & ACI & 0.882 & 0.554 & 6.43e+03 & 0.583 & 9.9e+03 & 0.261 & 0.064 \\
+ & PID-P & 0.792 & 0.158 & 0.145 & 0.344 & 1.46 & 0.899 & 0.344 \\
+ & PID-PI & 0.783 & 0.151 & 0.141 & 0.341 & 1.55 & 0.896 & 0.329 \\
+ & SAOCP & 0.909 & 0.636 & 880 & 0.620 & 666 & 0.511 & 0.165 \\
+ & UP-OCP & 0.875 & 0.549 & 186 & 0.592 & 323 & 0.471 & 0.142 \\
+ & Areces & 0.795 & 0.161 & 0.149 & 0.343 & 1.45 & 0.899 & 0.343 \\
+\addlinespace[2pt]
+GEFCom & Static & 0.897 & 0.429 & 1 & 0.371 & 4.03 & 0.897 & 0.429 \\
+ & Rolling & 0.873 & 0.314 & 2.68 & 0.400 & 8.04 & 0.884 & 0.371 \\
+ & ACI & 0.882 & 0.514 & $2.24\times10^{4}$ & 0.571 & $2.65\times10^{4}$ & 0.494 & 0.057 \\
+ & PID-P & 0.770 & 0.171 & 0.0374 & 0.343 & 4.21 & 0.895 & 0.429 \\
+ & PID-PI & 0.759 & 0.143 & 0.0342 & 0.371 & 4.21 & 0.892 & 0.429 \\
+ & SAOCP & 0.897 & 0.571 & $2.91\times10^{4}$ & 0.600 & 7.36e+03 & 0.604 & 0.086 \\
+ & UP-OCP & 0.866 & 0.543 & $2.85\times10^{4}$ & 0.543 & $1.43\times10^{5}$ & 0.519 & 0.086 \\
+ & Areces & 0.772 & 0.171 & 0.0392 & 0.343 & 4.19 & 0.892 & 0.429 \\
+\addlinespace[2pt]
+CAISO dev & Static & 0.857 & 0.429 & 1 & 0.464 & $5.17\times10^{4}$ & 0.857 & 0.429 \\
+ & Rolling & 0.874 & 0.452 & 317 & 0.464 & $5.52\times10^{5}$ & 0.815 & 0.369 \\
+ & ACI & 0.872 & 0.548 & $1.46\times10^{21}$ & 0.607 & $5.62\times10^{21}$ & 0.207 & 0.095 \\
+ & PID-P & 0.648 & 0.155 & 0.0123 & 0.452 & $4.54\times10^{4}$ & 0.854 & 0.429 \\
+ & PID-PI & 0.658 & 0.167 & 0.0142 & 0.464 & $4.79\times10^{4}$ & 0.855 & 0.429 \\
+ & SAOCP & 0.909 & 0.655 & $5.73\times10^{11}$ & 0.643 & $2.27\times10^{11}$ & 0.327 & 0.036 \\
+ & UP-OCP & 0.872 & 0.595 & $1.65\times10^{9}$ & 0.631 & $5.54\times10^{9}$ & 0.418 & 0.060 \\
+ & Areces & 0.658 & 0.167 & 0.0134 & 0.452 & $4.54\times10^{4}$ & 0.854 & 0.429 \\
+\addlinespace[2pt]
+CAISO post & Static & 0.735 & 0.286 & 1 & 0.571 & 883 & 0.735 & 0.286 \\
+ & Rolling & 0.835 & 0.429 & 134 & 0.571 & $1.68\times10^{4}$ & 0.675 & 0.310 \\
+ & ACI & 0.873 & 0.571 & $5.06\times10^{6}$ & 0.643 & $2.90\times10^{7}$ & 0.114 & 0.000 \\
+ & PID-P & 0.514 & 0.119 & 0.0739 & 0.571 & 861 & 0.727 & 0.310 \\
+ & PID-PI & 0.525 & 0.119 & 0.0892 & 0.571 & 928 & 0.724 & 0.310 \\
+ & SAOCP & 0.892 & 0.571 & $2.12\times10^{7}$ & 0.619 & $1.57\times10^{8}$ & 0.300 & 0.000 \\
+ & UP-OCP & 0.870 & 0.667 & $1.07\times10^{7}$ & 0.667 & $2.18\times10^{7}$ & 0.281 & 0.024 \\
+ & Areces & 0.523 & 0.119 & 0.0773 & 0.571 & 817 & 0.727 & 0.310 \\
+\bottomrule
+\end{tabular}
+\par\footnotesize The two matched views are retrospective diagnostics and are not online policies. Each row remains within one cohort and one common OAS-region estimand. Region volume is comparable within a cohort and is not used to rank across differing dimensionalities.
+\end{table}

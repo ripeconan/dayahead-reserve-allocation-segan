@@ -1,0 +1,130 @@
+{
+  "access_flags": {
+    "excluded_k1_package_accessed": false,
+    "exposed_historical_trace_accessed": true,
+    "network_used": false,
+    "raw_outcome_accessed": false,
+    "reserved_forecast_accessed": false,
+    "reserved_outcome_accessed": false,
+    "ssh_used": false
+  },
+  "admission_boundary": {
+    "action_count_matched_to_r51_or_cocd": false,
+    "confirmatory": false,
+    "cross_cohort_pooling": false,
+    "descriptive_exposed_replay": true,
+    "no_retune": true,
+    "universal_or_sota_claim": false
+  },
+  "controller": {
+    "budget_frac": 0.15,
+    "feedback_delay": 2,
+    "max_reference_metric_abs_error": 1.1102230246251565e-16,
+    "memory": 6,
+    "production_vs_r51_differing_origins": 23,
+    "r51_reverse_replay_origins": 23,
+    "theta": 1.0,
+    "three_way_identity_origins": 23
+  },
+  "identity": {
+    "input_daily": {
+      "bytes": 318485,
+      "path": "reports/experiment_outputs/card10_p0_3_p0_4_cross_dataset_transfer_r51_2026-07-17/daily_trace.csv.gz",
+      "sha256": "3e84b66dd2fff4a57151d5f67b21516043642c3acb3221bdda175bcfe4f88e42"
+    },
+    "input_per_origin": {
+      "bytes": 18545,
+      "path": "reports/experiment_outputs/card10_p0_3_p0_4_cross_dataset_transfer_r51_2026-07-17/per_origin_results.csv.gz",
+      "sha256": "fd9a8d0886a6c0cb86eea93629a23cc06813d5de7fe2a1f7b2faaea630b8c34b"
+    },
+    "mrp02_runner": {
+      "bytes": 35775,
+      "path": "scripts/card10_method/run_production_transfer_mrp02.py",
+      "sha256": "9dbb6da1c4badbebd5bc66c59c7c7a8dd766fb5980ea959a12596c0b67da3fef"
+    },
+    "production_controller": {
+      "bytes": 11638,
+      "path": "scripts/card10_p03/cmsd_controller.py",
+      "sha256": "0cd7640e9c7e1bdd1c82d15f69ba98e4e95df9af94b89d043b6a392010c81c3a"
+    },
+    "production_runner": {
+      "bytes": 56533,
+      "path": "scripts/card10_baselines/run_nyiso_scientific_matrix.py",
+      "sha256": "fa131d1804f7ff34645e015a22ad483002f93f2d92e0069d566f5059694e4405"
+    },
+    "protocol": {
+      "bytes": 6413,
+      "path": "reports/card10_MR-P0-2_production-controller跨数据同构迁移协议_FROZEN_2026-07-22.md",
+      "sha256": "229820f80271edf03d0d578fa160ed25aad7d3e92ee047bc99aaf39eae9498d7"
+    }
+  },
+  "input_schema": {
+    "cohorts": [
+      "gefcom_replay",
+      "caiso_dev_replay",
+      "caiso_postsplit_replay"
+    ],
+    "origin_count": 23,
+    "saocp_candidate": "saocp_verified_ast_lifetime8",
+    "selected_daily_rows": 2094
+  },
+  "outputs": {
+    "aggregate_rows": 12,
+    "daily_rows": 8376,
+    "paired_difference_rows": 299,
+    "paired_inference_rows": 39,
+    "per_origin_rows": 92
+  },
+  "schema": "card10.mr_p0_2_production_transfer_verification.v1",
+  "status": "PASS",
+  "summary": {
+    "caiso_dev_replay": {
+      "n_origins": 12,
+      "no_fallback_L_lambda_1": 0.09060194902891533,
+      "no_fallback_worst7": 0.6547619047619048,
+      "production_L_lambda_1": 0.23974058495919756,
+      "production_action_rate": 0.15185602723463007,
+      "production_blocked_triggers": 253,
+      "production_minus_base_worst7": 0.01190476190476191,
+      "production_minus_base_worst7_block2_ci": [
+        0.0,
+        0.035714285714285726
+      ],
+      "production_worst7": 0.6666666666666666,
+      "r51_variant_action_rate": 0.09700292266853087,
+      "r51_variant_worst7": 0.6904761904761906
+    },
+    "caiso_postsplit_replay": {
+      "n_origins": 6,
+      "no_fallback_L_lambda_1": 0.10842387949129523,
+      "no_fallback_worst7": 0.5714285714285714,
+      "production_L_lambda_1": 0.2536039518208546,
+      "production_action_rate": 0.15069582753998975,
+      "production_blocked_triggers": 138,
+      "production_minus_base_worst7": 0.0,
+      "production_minus_base_worst7_block2_ci": [
+        0.0,
+        0.0
+      ],
+      "production_worst7": 0.5714285714285714,
+      "r51_variant_action_rate": 0.11211081704486688,
+      "r51_variant_worst7": 0.6428571428571429
+    },
+    "gefcom_replay": {
+      "n_origins": 5,
+      "no_fallback_L_lambda_1": 0.10289589637415723,
+      "no_fallback_worst7": 0.5714285714285714,
+      "production_L_lambda_1": 0.2473371555980252,
+      "production_action_rate": 0.15318468970642884,
+      "production_blocked_triggers": 107,
+      "production_minus_base_worst7": 0.0,
+      "production_minus_base_worst7_block2_ci": [
+        0.0,
+        0.0
+      ],
+      "production_worst7": 0.5714285714285714,
+      "r51_variant_action_rate": 0.12260497956150132,
+      "r51_variant_worst7": 0.6571428571428571
+    }
+  }
+}

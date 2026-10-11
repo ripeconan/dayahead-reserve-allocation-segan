@@ -1,0 +1,4 @@
+numpy
+pandas
+torch==2.5.1
+neuralforecast==1.7.7

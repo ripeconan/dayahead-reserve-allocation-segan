@@ -1,0 +1,78 @@
+{
+  "per_year": [
+    {
+      "year": 2019,
+      "base_MWh": 755.6238749370173,
+      "P_MWh": 755.6238749370173,
+      "saved_MWh": 0.0,
+      "base_worst7_MWh": 588.138150411963,
+      "P_worst7_MWh": 588.138150411963,
+      "P_action_days": 43,
+      "extra_capacity_MWh": 1228398.2568630553
+    },
+    {
+      "year": 2020,
+      "base_MWh": 1418.3284035719926,
+      "P_MWh": 1383.460049808742,
+      "saved_MWh": 34.868353763250525,
+      "base_worst7_MWh": 985.7488734242672,
+      "P_worst7_MWh": 985.7488734242672,
+      "P_action_days": 32,
+      "extra_capacity_MWh": 752306.6461946421
+    },
+    {
+      "year": 2021,
+      "base_MWh": 287.93568040497075,
+      "P_MWh": 287.93568040497075,
+      "saved_MWh": 0.0,
+      "base_worst7_MWh": 112.59763566587948,
+      "P_worst7_MWh": 112.59763566587948,
+      "P_action_days": 40,
+      "extra_capacity_MWh": 956124.1544055308
+    },
+    {
+      "year": 2022,
+      "base_MWh": 1259.173541300852,
+      "P_MWh": 944.9899164369458,
+      "saved_MWh": 314.1836248639063,
+      "base_worst7_MWh": 299.9183751453834,
+      "P_worst7_MWh": 299.9183751453834,
+      "P_action_days": 54,
+      "extra_capacity_MWh": 1418274.9995154876
+    },
+    {
+      "year": 2023,
+      "base_MWh": 780.3707485612199,
+      "P_MWh": 693.4012479616017,
+      "saved_MWh": 86.96950059961819,
+      "base_worst7_MWh": 331.7530595684102,
+      "P_worst7_MWh": 252.24086663821612,
+      "P_action_days": 53,
+      "extra_capacity_MWh": 1245730.8699887786
+    },
+    {
+      "year": 2024,
+      "base_MWh": 1601.4987503415537,
+      "P_MWh": 1560.283270953945,
+      "saved_MWh": 41.21547938760864,
+      "base_worst7_MWh": 515.143655635821,
+      "P_worst7_MWh": 515.143655635821,
+      "P_action_days": 55,
+      "extra_capacity_MWh": 1381421.0483838324
+    },
+    {
+      "year": 2025,
+      "base_MWh": 3034.934971919938,
+      "P_MWh": 1143.1936521896869,
+      "saved_MWh": 1891.7413197302512,
+      "base_worst7_MWh": 1410.5861065725271,
+      "P_worst7_MWh": 862.925609521104,
+      "P_action_days": 33,
+      "extra_capacity_MWh": 883023.7258171462
+    }
+  ],
+  "eta0_all_policies_physical_identical": true,
+  "nonnegative_capacity_monotonicity": true,
+  "largest_savings_share": 0.7985473471931278,
+  "ratio_of_macro_means_percent": 25.92485254055059
+}

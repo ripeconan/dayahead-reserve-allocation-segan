@@ -1,0 +1,20 @@
+
+\begin{table}[!tbp]
+\centering
+\caption{Load benchmarks, evidence status, and evaluation contracts.}
+\label{tab:contracts}
+\scriptsize
+\renewcommand{\arraystretch}{0.90}
+\begin{tabular}{p{0.17\textwidth}p{0.19\textwidth}p{0.13\textwidth}p{0.13\textwidth}p{0.16\textwidth}}
+\toprule
+Cohort & Primitive region & Evaluation units & Feedback & Role \\
+\midrule
+NYISO exposed development & Hourly joint region, 11 zones & 7 origins, 2018--2025 & Strict lag-2 & Primary benchmark \\
+GEFCom2014 replay & Daily joint region, 24 hours & 5 quarterly origins & Strict lag-2 & Transfer sensitivity \\
+CAISO development replay & Daily joint region, 24 hours & 12 origins & Strict lag-2 & Transfer development \\
+CAISO post-split replay & Daily joint region, 24 hours & 6 origins & Strict lag-2 & Exposed transfer sensitivity \\
+NYISO recovery & Hourly joint region, 11 zones & 181 days, 12 blocks & Strict lag-2 & Recovery-confirmatory \\
+\bottomrule
+\end{tabular}
+\par\footnotesize Primary NYISO and recovery action paths use production shortfall-sum DRB. GEFCom/CAISO allocation sensitivities use the separate thresholded-count variant (Table~\ref{tab:transfer}); no-retune production replay is reported separately in Supplementary Table~S10. NYISO recovery retained a frozen analysis after technical recovery with prior outcome access. Cohorts and coverage geometries are not pooled.
+\end{table}
